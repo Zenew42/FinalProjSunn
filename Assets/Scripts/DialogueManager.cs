@@ -5,6 +5,7 @@ using UnityEngine;
 using Ink.Runtime;
 using UnityEngine.EventSystems;
 using UnityEngine.Serialization;
+using Ink.UnityIntegration;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -15,12 +16,22 @@ public class DialogueManager : MonoBehaviour
     [Header("ChoicesUI")] 
     [SerializeField] private GameObject[] choices;
     private TextMeshProUGUI[] _choicesText;
-    
+
+    [Header("TypingParameters")] 
+    [SerializeField] private float _typeSpeed = 0.04f;
+
+    [SerializeField] private InkFile globalsInkFile;
+
     public bool dialogueIsPlaying {get; private set;}
+    public bool choiceIsPlaying;
+    private bool _canContinueToNextLine = false;
 
     private Story _currentStory;
     private static DialogueManager _instance;
-
+    private Coroutine displayLineCoroutine;
+    
+    private DialogueVariables _dialogueVariables;
+    
     private void Awake()
     {
         if (_instance != null)
@@ -28,6 +39,8 @@ public class DialogueManager : MonoBehaviour
             Debug.LogError("More than one DialogueManager in the scene");
         }
         _instance = this;
+        
+        _dialogueVariables = new DialogueVariables(globalsInkFile.filePath);
     }
 
     public static DialogueManager GetInstance()
@@ -58,24 +71,61 @@ public class DialogueManager : MonoBehaviour
             return;
         }
         
+        _dialogueVariables.StartListening(_currentStory);
+        
         _currentStory = new Story(inkJson.text);
         dialogueIsPlaying = true;
         dialoguePanel.SetActive(true);
         PauseController.SetPause(true);
 
-        ContinueDialogue();
+        if (!choiceIsPlaying)
+        {
+            ContinueDialogue();
+        }
+        
     }
     
     private void ContinueDialogue()
     {
         if (_currentStory.canContinue)
         {
-            dialogueText.text = _currentStory.Continue();
-            DisplayChoices();
+            if (displayLineCoroutine != null)
+            {
+                StopCoroutine(displayLineCoroutine);
+            }
+            
+            displayLineCoroutine = StartCoroutine(DisplayLine(_currentStory.Continue()));
+            //dialogueText.text = _currentStory.Continue();
+            
         }
         else
         {
             ExitDialogue();
+        }
+    }
+    
+    private IEnumerator DisplayLine(string line)
+    {
+        dialogueText.text = "";
+        
+        HideChoices();
+        _canContinueToNextLine = false;
+        
+        foreach (char c in line)
+        {
+            dialogueText.text += c;
+            yield return new WaitForSeconds(_typeSpeed);
+        }
+        
+        DisplayChoices();
+        _canContinueToNextLine = true;
+    }
+
+    private void HideChoices()
+    {
+        foreach (GameObject choiceButton in choices)
+        {
+            choiceButton.SetActive(false);
         }
     }
 
@@ -110,6 +160,8 @@ public class DialogueManager : MonoBehaviour
         dialogueIsPlaying = false;
         dialogueText.text = "";
         PauseController.SetPause(false);
+        
+        _dialogueVariables.StopListening(_currentStory);
     }
 
     private IEnumerator SelectFirstChoice()
@@ -117,5 +169,16 @@ public class DialogueManager : MonoBehaviour
         EventSystem.current.SetSelectedGameObject(null);
         yield return new WaitForEndOfFrame();
         EventSystem.current.SetSelectedGameObject(choices[0].gameObject);
+    }
+    
+    public void MakeChoice(int choiceIndex)
+    {
+        if (_canContinueToNextLine)
+        {
+            _currentStory.ChooseChoiceIndex(choiceIndex);
+            choiceIsPlaying = true;
+        
+            ContinueDialogue();
+        }
     }
 }
