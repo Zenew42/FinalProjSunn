@@ -5,7 +5,6 @@ using UnityEngine;
 using Ink.Runtime;
 using UnityEngine.EventSystems;
 using UnityEngine.Serialization;
-using Ink.UnityIntegration;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -16,14 +15,15 @@ public class DialogueManager : MonoBehaviour
     [Header("ChoicesUI")] 
     [SerializeField] private GameObject[] choices;
     private TextMeshProUGUI[] _choicesText;
+    public bool choiceIsPlaying;
 
     [Header("TypingParameters")] 
     [SerializeField] private float _typeSpeed = 0.04f;
 
-    [SerializeField] private InkFile globalsInkFile;
+    [Header("LoadJSON")]
+    [SerializeField] private TextAsset loadGlobalsJSON;
 
     public bool dialogueIsPlaying {get; private set;}
-    public bool choiceIsPlaying;
     private bool _canContinueToNextLine = false;
 
     private Story _currentStory;
@@ -40,7 +40,7 @@ public class DialogueManager : MonoBehaviour
         }
         _instance = this;
         
-        _dialogueVariables = new DialogueVariables(globalsInkFile.filePath);
+        _dialogueVariables = new DialogueVariables(loadGlobalsJSON);
     }
 
     public static DialogueManager GetInstance()
