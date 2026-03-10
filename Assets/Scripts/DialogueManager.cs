@@ -71,17 +71,17 @@ public class DialogueManager : MonoBehaviour
             return;
         }
         
-        _dialogueVariables.StartListening(_currentStory);
-        
         _currentStory = new Story(inkJson.text);
         dialogueIsPlaying = true;
         dialoguePanel.SetActive(true);
         PauseController.SetPause(true);
+        _dialogueVariables.StartListening(_currentStory);
 
+        /*
         if (!choiceIsPlaying)
         {
             ContinueDialogue();
-        }
+        }*/
         
     }
     
@@ -160,7 +160,6 @@ public class DialogueManager : MonoBehaviour
         dialogueIsPlaying = false;
         dialogueText.text = "";
         PauseController.SetPause(false);
-        
         _dialogueVariables.StopListening(_currentStory);
     }
 

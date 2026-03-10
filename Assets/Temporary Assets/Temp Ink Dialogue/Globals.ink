@@ -1,1 +1,1 @@
-VAR flavor = ""
+VAR flavor = "Ice cream flavor"
