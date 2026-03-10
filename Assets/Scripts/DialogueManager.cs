@@ -14,10 +14,12 @@ public class DialogueManager : MonoBehaviour
 
     [Header("ChoicesUI")] 
     [SerializeField] private GameObject[] choices;
+    
     private TextMeshProUGUI[] _choicesText;
     
     public bool dialogueIsPlaying {get; private set;}
-
+    public bool choiceIsActive {get; private set;}
+    
     private Story _currentStory;
     private static DialogueManager _instance;
 
@@ -68,14 +70,17 @@ public class DialogueManager : MonoBehaviour
     
     private void ContinueDialogue()
     {
-        if (_currentStory.canContinue)
+        if (!choiceIsActive)
         {
-            dialogueText.text = _currentStory.Continue();
-            DisplayChoices();
-        }
-        else
-        {
-            ExitDialogue();
+            if (_currentStory.canContinue)
+            {
+                dialogueText.text = _currentStory.Continue();
+                DisplayChoices();
+            }
+            else
+            {
+                ExitDialogue();
+            }
         }
     }
 
@@ -94,13 +99,14 @@ public class DialogueManager : MonoBehaviour
             choices[index].SetActive(true);
             _choicesText[index].text = choice.text;
             index++;
+            choiceIsActive = true;
         }
 
         for (int i = index; i < choices.Length; i++)
         {
             choices[i].SetActive(false);
         }
-
+        
         StartCoroutine(SelectFirstChoice());
     }
     
@@ -117,5 +123,12 @@ public class DialogueManager : MonoBehaviour
         EventSystem.current.SetSelectedGameObject(null);
         yield return new WaitForEndOfFrame();
         EventSystem.current.SetSelectedGameObject(choices[0].gameObject);
+    }
+
+    public void MakeChoice(int choiceIndex)
+    {
+        _currentStory.ChooseChoiceIndex(choiceIndex);
+        choiceIsActive = false;
+        ContinueDialogue();
     }
 }
