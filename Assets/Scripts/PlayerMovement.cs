@@ -18,7 +18,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        if (PauseController.isGamePaused)
+        if (PauseController.IsGamePaused)
         {
             rb.linearVelocity = Vector2.zero;
             return;
