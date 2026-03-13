@@ -19,8 +19,10 @@ public class DialogueManager : MonoBehaviour
     
     [Header("ChoicesUI")] 
     [SerializeField] private GameObject[] choices;
-    
     private TextMeshProUGUI[] _choicesText;
+    
+    [Header ("Load Globals JSON")]
+    [SerializeField] private TextAsset loadGlobalsJSON;
     
     public bool dialogueIsPlaying {get; private set;}
     
@@ -40,6 +42,7 @@ public class DialogueManager : MonoBehaviour
     };
 
 
+    private DialogueVariables _dialogueVariables;
 
     private void Awake()
     {
@@ -48,6 +51,8 @@ public class DialogueManager : MonoBehaviour
             Debug.LogError("More than one DialogueManager in the scene");
         }
         _instance = this;
+
+        _dialogueVariables = new DialogueVariables(loadGlobalsJSON);
     }
 
     public static DialogueManager GetInstance()
@@ -81,6 +86,8 @@ public class DialogueManager : MonoBehaviour
         dialogueIsPlaying = true;
         dialoguePanel.SetActive(true);
         PauseController.SetPause(true);
+        
+        _dialogueVariables.StartListening(_currentStory);
 
         ContinueDialogue();
     }
@@ -182,6 +189,8 @@ public class DialogueManager : MonoBehaviour
     
     private void ExitDialogue() 
     {
+        _dialogueVariables.StopListening(_currentStory);
+        
         dialoguePanel.SetActive(false);
         dialogueIsPlaying = false;
         dialogueText.text = "";
@@ -200,5 +209,16 @@ public class DialogueManager : MonoBehaviour
         _currentStory.ChooseChoiceIndex(choiceIndex);
         choiceIsActive = false;
         ContinueDialogue();
+    }
+
+    public Ink.Runtime.Object GetVariableState(string variableName)
+    {
+        Ink.Runtime.Object variableValue = null;
+        _dialogueVariables.variables.TryGetValue(variableName, out variableValue);
+        if (variableValue == null)
+        {
+            Debug.LogWarning("Ink Variable was found to be null: " + variableName);
+        }
+        return variableValue;
     }
 }

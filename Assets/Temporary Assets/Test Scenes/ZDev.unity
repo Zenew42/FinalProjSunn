@@ -485,6 +485,7 @@ MonoBehaviour:
   - {fileID: 787010003}
   - {fileID: 325268703}
   - {fileID: 1259974883}
+  loadGlobalsJSON: {fileID: 4900000, guid: d27a5a63b4ac9e747b89f40622b82b16, type: 3}
 --- !u!1 &291980735
 GameObject:
   m_ObjectHideFlags: 0
@@ -2564,7 +2565,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bd7329641219e94eb844959ee8492d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
-  inkJson: {fileID: 4900000, guid: 6cf48bb6d89824cc69e35b43f9a1aca6, type: 3}
+  inkJson: {fileID: 4900000, guid: 887a08a373ed5834396a142004bf24e2, type: 3}
 --- !u!212 &1794933693
 SpriteRenderer:
   serializedVersion: 2
