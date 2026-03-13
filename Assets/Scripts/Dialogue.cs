@@ -7,7 +7,14 @@ public class Dialogue : MonoBehaviour, IInteractable
     public void Interact()
     {
         Debug.Log("Interact");
-        DialogueManager.GetInstance().StartDialogue(inkJson);
+        if (DialogueManager.CanContinueToNextLine == true)
+        {
+            DialogueManager.GetInstance().StartDialogue(inkJson);
+        }
+        else
+        {
+            DialogueManager.SkippingDialogue = true;
+        }
     }
 
     public bool CanInteract()

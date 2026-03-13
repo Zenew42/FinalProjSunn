@@ -475,6 +475,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5ebd3cca0cfc724197fe3776db6edad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DialogueManager
+  charactersPerSecond: 30
+  punctuationDelay: 0.5
   dialoguePanel: {fileID: 1742077860}
   dialogueText: {fileID: 1806296538}
   choices:

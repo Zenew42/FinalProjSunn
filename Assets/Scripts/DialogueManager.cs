@@ -1,27 +1,45 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using TMPro;
 using UnityEngine;
 using Ink.Runtime;
 using UnityEngine.EventSystems;
-using UnityEngine.Serialization;
 
 public class DialogueManager : MonoBehaviour
 {
-    [Header("DialogueUI")] 
+    [Header("DialogueUI")]   
+    [SerializeField] private float charactersPerSecond = 20f;
+    [SerializeField] private float punctuationDelay = 0.5f;
     [SerializeField] private GameObject dialoguePanel;
     [SerializeField] private TextMeshProUGUI dialogueText;
 
+    
+    private float baseDelay => 1f / charactersPerSecond;
+    
     [Header("ChoicesUI")] 
     [SerializeField] private GameObject[] choices;
     
     private TextMeshProUGUI[] _choicesText;
     
     public bool dialogueIsPlaying {get; private set;}
+    
+    private Coroutine _displayLineCoroutine;
+    public static bool CanContinueToNextLine = true;
+    
     public bool choiceIsActive {get; private set;}
     
     private Story _currentStory;
+    private bool _isTyping;
+    public static bool SkippingDialogue;
     private static DialogueManager _instance;
+    
+    private readonly char[] _punctuationMarks =
+    {
+        '.', ',', '?', '!', ':', ';', '-'
+    };
+
+
 
     private void Awake()
     {
@@ -48,7 +66,6 @@ public class DialogueManager : MonoBehaviour
         {
             _choicesText[index]= choice.GetComponentInChildren<TextMeshProUGUI>();
             index++;
-            
         }
     }
 
@@ -74,8 +91,11 @@ public class DialogueManager : MonoBehaviour
         {
             if (_currentStory.canContinue)
             {
-                dialogueText.text = _currentStory.Continue();
-                DisplayChoices();
+                if (_displayLineCoroutine != null)
+                {
+                    StopCoroutine(_displayLineCoroutine);
+                }         
+                _displayLineCoroutine = StartCoroutine(DisplayLine(_currentStory.Continue())); 
             }
             else
             {
@@ -84,6 +104,48 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
+    private IEnumerator DisplayLine(string line)
+    {
+        dialogueText.text = line;
+        dialogueText.maxVisibleCharacters = 0;
+        CanContinueToNextLine = false; 
+        bool isAddingRichTextTag = false;
+        HideChoices();
+        
+        foreach (char letter in line)
+        {
+            if (SkippingDialogue)
+            {
+             dialogueText.maxVisibleCharacters = line.Length;
+             CanContinueToNextLine = true;  
+             SkippingDialogue = false;
+             break;
+            }
+            if (letter == '<' || isAddingRichTextTag)
+            {
+                isAddingRichTextTag = true;
+                if (letter == '>')
+                {
+                    isAddingRichTextTag = false;
+                }
+            } 
+            else
+            {
+                dialogueText.maxVisibleCharacters++;
+                
+                float delay = _punctuationMarks.Contains(letter)
+                    ? punctuationDelay
+                    : baseDelay;
+
+                yield return new WaitForSeconds(delay);
+            } 
+        }
+            
+        DisplayChoices();
+        CanContinueToNextLine = true;
+    }
+    
+    
     private void DisplayChoices()
     {
         List<Choice> currentChoices = _currentStory.currentChoices;
@@ -108,6 +170,14 @@ public class DialogueManager : MonoBehaviour
         }
         
         StartCoroutine(SelectFirstChoice());
+    }
+
+    private void HideChoices()
+    {
+        foreach (GameObject choiceButton in choices)
+        {
+            choiceButton.SetActive(false);
+        }
     }
     
     private void ExitDialogue() 
