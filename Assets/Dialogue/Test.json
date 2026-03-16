@@ -1,0 +1,1 @@
+﻿{"inkVersion":21,"root":[[["done",{"#f":5,"#n":"g-0"}],null],"done",{"npc_talk":["ev",{"VAR?":"act"},1,"==","/ev",[{"->":".^.b","c":true},{"b":["\n","^\"Act 1 vibes.\"","\n",{"->":".^.^.^.7"},null]}],[{"->":".^.b"},{"b":["\n","done",{"->":".^.^.^.7"},null]}],"nop","\n",{"#f":1}],"global decl":["ev",2,{"VAR=":"act"},"/ev","end",null],"#f":1}],"listDefs":{}}
