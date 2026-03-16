@@ -1,3 +1,4 @@
+INCLUDE Globals.ink
 //Diary
 //Act 1
 

@@ -1,3 +1,4 @@
+INCLUDE Globals.ink
 //Act 3
 
 "Why did you leave"
