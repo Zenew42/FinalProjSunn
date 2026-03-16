@@ -6,6 +6,7 @@ INCLUDE Globals.ink
 "They are right over there~"
 
 "Just walk over with "WASD" and press "E" to interact" ^-^
+->END
 
 //Player can walk over and put on a hat
 
