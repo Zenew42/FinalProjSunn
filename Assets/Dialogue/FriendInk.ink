@@ -1,3 +1,4 @@
+INCLUDE Globals.ink
 "Welcome to my party Friend!!"
 
 "You should put on a party hat so we can match!"

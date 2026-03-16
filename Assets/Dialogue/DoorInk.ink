@@ -1,3 +1,4 @@
+INCLUDE Globals.ink
 //door interaction 
 //Act 1
 

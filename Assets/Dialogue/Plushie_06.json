@@ -1,1 +1,1 @@
-﻿{"inkVersion":21,"root":[["^ddd","\n","end",["done",{"#f":5,"#n":"g-0"}],null],"done",{"#f":1}],"listDefs":{}}
+﻿{"inkVersion":21,"root":[["\n","^ddd","\n","ev",{"VAR?":"plushies"},1,"+",{"VAR=":"plushies","re":true},"/ev","end",["done",{"#f":5,"#n":"g-0"}],null],"done",{"global decl":["ev",false,{"VAR=":"free_time"},false,{"VAR=":"has_hat"},0,{"VAR=":"plushies"},false,{"VAR=":"has_all_plushies"},"/ev","end",null],"#f":1}],"listDefs":{}}

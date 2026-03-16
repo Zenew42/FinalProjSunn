@@ -1,3 +1,4 @@
+INCLUDE Globals.ink
 //Window
 
 //act 1 freetime 1
