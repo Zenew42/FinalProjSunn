@@ -20,6 +20,10 @@ public class DialogueManager : MonoBehaviour
     [Header("ChoicesUI")] 
     [SerializeField] private GameObject[] choices;
     
+    [Header("DialogueObjects")]
+    [SerializeField] private GameObject[] dialogueObject;
+    [SerializeField] private GameObject partyHatObject;
+    
     private TextMeshProUGUI[] _choicesText;
     
     public bool dialogueIsPlaying {get; private set;}
@@ -78,6 +82,8 @@ public class DialogueManager : MonoBehaviour
         }
         
         _currentStory = new Story(inkJson.text);
+        _currentStory.BindExternalFunction("PartyHatPick", PartyHat);
+        
         dialogueIsPlaying = true;
         dialoguePanel.SetActive(true);
         PauseController.SetPause(true);
@@ -200,5 +206,16 @@ public class DialogueManager : MonoBehaviour
         _currentStory.ChooseChoiceIndex(choiceIndex);
         choiceIsActive = false;
         ContinueDialogue();
+    }
+
+    void PartyHat()
+    {
+        Debug.Log("Party Hat picked up");
+        
+        foreach (GameObject obj in dialogueObject)
+            obj.SetActive(true);
+        
+        partyHatObject.SetActive(false);
+        ExitDialogue();
     }
 }
