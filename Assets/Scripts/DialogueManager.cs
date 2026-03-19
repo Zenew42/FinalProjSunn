@@ -5,6 +5,7 @@ using TMPro;
 using UnityEngine;
 using Ink.Runtime;
 using UnityEngine.EventSystems;
+using UnityEngine.Playables;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -43,6 +44,10 @@ public class DialogueManager : MonoBehaviour
         '.', ',', '?', '!', ':', ';', '-'
     };
 
+    [Header("Cutscenes")]
+    private CutsceneManager _cutsceneManager;
+    [SerializeField] private PlayableAsset[] Cutscenes;
+
 
 
     private void Awake()
@@ -63,6 +68,8 @@ public class DialogueManager : MonoBehaviour
     {
         dialoguePanel.SetActive(false);
         dialogueIsPlaying = false;
+
+        _cutsceneManager = GetComponent<CutsceneManager>();
         
         _choicesText= new TextMeshProUGUI[choices.Length];
         int index = 0;
@@ -83,6 +90,7 @@ public class DialogueManager : MonoBehaviour
         
         _currentStory = new Story(inkJson.text);
         _currentStory.BindExternalFunction("PartyHatPick", PartyHat);
+        _currentStory.BindExternalFunction("TableScene", TableScene);
         
         dialogueIsPlaying = true;
         dialoguePanel.SetActive(true);
@@ -217,5 +225,10 @@ public class DialogueManager : MonoBehaviour
         
         partyHatObject.SetActive(false);
         ExitDialogue();
+    }
+
+    void TableScene()
+    {
+        _cutsceneManager.StartCutscene(Cutscenes[0]);
     }
 }
