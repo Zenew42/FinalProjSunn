@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 9fc505d2dff05bc47894956361880307
+guid: c7b24fe9819fe18499dfec2133b8e066
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4003855612120251060
-    second: catplushnotonchair_0
+      213: 2240765655706801859
+    second: monkeyplush_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: catplushnotonchair_0
+      name: monkeyplush_0
       rect:
         serializedVersion: 2
-        x: 94
-        y: 43
-        width: 313
-        height: 414
+        x: 81
+        y: 37
+        width: 338
+        height: 425
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4bab164477d809730800000000000000
-      internalID: 4003855612120251060
+      spriteID: 3c69c45ed7cc81f10800000000000000
+      internalID: 2240765655706801859
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      catplushnotonchair_0: 4003855612120251060
+      monkeyplush_0: 2240765655706801859
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
