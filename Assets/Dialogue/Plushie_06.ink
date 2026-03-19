@@ -6,7 +6,7 @@ ddd
     ~plushies += 1
     {plushies == 6:
         ~TableScene()
-        else:
+         - else:
         ->END
     }
 
