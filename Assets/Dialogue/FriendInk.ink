@@ -1,22 +1,22 @@
 INCLUDE Globals.ink
-"Welcome to my party Friend!!"
+Welcome to my party Friend!!
 
-"You should put on a party hat so we can match!"
+You should put on a party hat so we can match!
 
-"They are right over there~"
+They are right over there~
 
-"Just walk over with "WASD" and press "E" to interact" ^-^
+Just walk over with "WASD" and press "E" to interact ^-^
 ->END
 
 //Player can walk over and put on a hat
 
 
-"Now that everyone is here... let's sit down!"
+Now that everyone is here... let's sit down!
 
 //characters sit at the table
 
-"Since it's my birthday we should play a game!!"
-"Which game do you wanna play friend?"
+Since it's my birthday we should play a game!!
+Which game do you wanna play friend?
 
 * [I don't know.]
 -> FriendDecides
@@ -26,15 +26,15 @@ INCLUDE Globals.ink
 
 
 ===FriendDecides===
-"Oh.. okey hm..."
+Oh.. okay hm...
 -> Question1
 
 ===Question1===
-"Let's play Would you rather!"
+Let's play Would you rather!
 
-"I'll start"
+I'll start
 
-"Would you rather eat strawberries or chocolate?"
+Would you rather eat strawberries or chocolate?
 
 // this later decides the cake flavour
 * [Strawberries]
@@ -45,19 +45,19 @@ INCLUDE Globals.ink
 
 
 ===Strawberries===
-"Yummy!!! i love strawberries aswell hehe!"
+Yummy!!! i love strawberries aswell hehe!
 ->Question2
 
 ===Chocolate===
-"Chocolate is my favourite too hehe!!"
+Chocolate is my favourite too hehe!!
 ->Question2
 
 ===Question2===
-"Next question!!"
+Next question!!
 
-"Hmmmm..."
+Hmmmm...
 
-"You liiiike me righttt???"
+You liiiike me righttt???
 
 * [Yes]
 ->YouLike
@@ -69,18 +69,18 @@ INCLUDE Globals.ink
 ->DontLike
 
 ===YouLike===
-"I Knew you liked me hehe!!
+I Knew you liked me hehe!!
 ->Question3
 
 ===DontLike===
-"hahah silly you! of corse you like me!" ^^
+hahah silly you! of course you like me!
 ->Question3
 
 ===Question3===
-"Moving on!"
+Moving on!
 
-"Let's see..."
-"If you could have a pet... Which would you have?"
+Let's see...
+If you could have a pet... Which would you have?
  //Could be brought up later in a creepy way, maybe a dead animal or smth lol
 * [Dog]
 ->Cute
@@ -94,20 +94,20 @@ INCLUDE Globals.ink
 ->Funny
 
 ===Cute===
-"Awww.. that would be such a cute pet!" ^^
+Awww.. that would be such a cute pet! ^^
 ->Question4
 ===Scary===
-"Realllyyy!! You're so brave... I'm too scared of snakes..." :o
+Realllyyy!! You're so brave... I'm too scared of snakes... :o
 ->Question4
 ===Funny===
-"Hehehehe! You're so funny!!" 
+Hehehehe! You're so funny!!
 ->Question4
 
 
 ===Question4===
-"Last Question!!"
+Last Question!!
 
-"Would you like to spend the rest of your life with me?"
+Would you like to spend the rest of your life with me?
 
 * [What?]
 ->Question5
@@ -117,16 +117,16 @@ INCLUDE Globals.ink
 ->Question5
 
 ===Question5===
-"Umm... Your turn to ask questions!! heheh"
+Umm... Your turn to ask questions!! heheh
 
 * [Can i leave now?]
 ->CakePrep
 
 
 ===CakePrep===
-"Why would you want to leave now?? It's storming outside!"
+Why would you want to leave now?? It's storming outside!
 //Thunder sound effect and light flickering followed by sound of rain and storm 
-"Anyway! It's time for cake! I'll go prep it hehe!" ^^
+Anyway! It's time for cake! I'll go prep it hehe! ^^
 
 //free time
 
