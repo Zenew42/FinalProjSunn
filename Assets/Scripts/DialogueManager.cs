@@ -229,6 +229,10 @@ public class DialogueManager : MonoBehaviour
 
     void TableScene()
     {
+        ExitDialogue();
         _cutsceneManager.StartCutscene(Cutscenes[0]);
+        Debug.Log("Is called");
     }
+    
+        
 }
