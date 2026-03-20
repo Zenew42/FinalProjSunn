@@ -1,16 +1,16 @@
 fileFormatVersion: 2
-guid: ee7a527dee3254946989eafa0853a604
+guid: f02b3b4e04d82484997b13f6be0fe0e8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1979833744298974047
-    second: friend_sprite_normal_0
+      213: 3843231544584785974
+    second: book_0
   - first:
-      213: -5052787538834867949
-    second: friend_sprite_normal_1
+      213: -6053866238764602296
+    second: book_1
   - first:
-      213: 8964143124893341683
-    second: friend_sprite_normal_2
+      213: 7244088574319584740
+    second: book_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -52,12 +52,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 356
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -78,7 +78,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 1024
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -119,67 +119,67 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: friend_sprite_normal_0
+      name: book_0
       rect:
         serializedVersion: 2
-        x: 840
-        y: 89
-        width: 681
-        height: 1976
+        x: 365
+        y: 169
+        width: 1177
+        height: 788
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1a46abcf2b73684e0800000000000000
-      internalID: -1979833744298974047
+      spriteID: 6305d8c3ab6e55530800000000000000
+      internalID: 3843231544584785974
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: friend_sprite_normal_1
+      name: book_1
       rect:
         serializedVersion: 2
-        x: 3013
-        y: 67
-        width: 684
-        height: 1969
+        x: 1569
+        y: 508
+        width: 10
+        height: 6
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3193a361184e0e9b0800000000000000
-      internalID: -5052787538834867949
+      spriteID: 84ca4b80bb85cfba0800000000000000
+      internalID: -6053866238764602296
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: friend_sprite_normal_2
+      name: book_2
       rect:
         serializedVersion: 2
-        x: 5167
-        y: 86
-        width: 690
-        height: 1957
+        x: 1574
+        y: 501
+        width: 9
+        height: 12
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3f717039da8076c70800000000000000
-      internalID: 8964143124893341683
+      spriteID: 4e5e8c17d2c288460800000000000000
+      internalID: 7244088574319584740
       vertices: []
       indices: 
       edges: []
@@ -188,7 +188,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 3394d5f6a2cc39b4580f4243657f868e
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -196,13 +196,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries:
-      - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+      entries: []
     nameFileIdTable:
-      friend_sprite_normal_0: -1979833744298974047
-      friend_sprite_normal_1: -5052787538834867949
-      friend_sprite_normal_2: 8964143124893341683
+      book_0: 3843231544584785974
+      book_1: -6053866238764602296
+      book_2: 7244088574319584740
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

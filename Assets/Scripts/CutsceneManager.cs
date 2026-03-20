@@ -16,9 +16,14 @@ public class CutsceneManager : MonoBehaviour
     {
         director.Pause();
     }
+    
 
-    /*private void Start()
+    /*void DiaryScene()
     {
-        StartCutscene(clip);
-    }*/
+        ExitDialogue();
+        _cutsceneManager.StartCutscene(Cutscenes[1]);
+        Debug.Log("Is called");
+    }
+    
+    _currentStory.BindExternalFunction("DiaryScene", DiaryScene);*/
 }

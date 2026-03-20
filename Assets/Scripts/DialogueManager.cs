@@ -89,8 +89,13 @@ public class DialogueManager : MonoBehaviour
         }
         
         _currentStory = new Story(inkJson.text);
+
+        #region External Functions
         _currentStory.BindExternalFunction("PartyHatPick", PartyHat);
         _currentStory.BindExternalFunction("TableScene", TableScene);
+        _currentStory.BindExternalFunction("DiaryScene", DiaryScene);
+        #endregion
+        
         
         dialogueIsPlaying = true;
         dialoguePanel.SetActive(true);
@@ -194,7 +199,7 @@ public class DialogueManager : MonoBehaviour
         }
     }
     
-    private void ExitDialogue() 
+    public void ExitDialogue() 
     {
         dialoguePanel.SetActive(false);
         dialogueIsPlaying = false;
@@ -234,5 +239,10 @@ public class DialogueManager : MonoBehaviour
         Debug.Log("Is called");
     }
     
-        
+    void DiaryScene()
+    {
+        ExitDialogue();
+        _cutsceneManager.StartCutscene(Cutscenes[1]);
+        Debug.Log("Is called");
+    }
 }
