@@ -1,0 +1,650 @@
+fileFormatVersion: 2
+guid: b19053383c2a9e44a80b7ee2c2e21667
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5342695687298768826
+    second: leftchair_0
+  - first:
+      213: 2373428427705261559
+    second: leftchair_1
+  - first:
+      213: 8212188420373050686
+    second: leftchair_2
+  - first:
+      213: -2567657466840030141
+    second: leftchair_3
+  - first:
+      213: -1615381449199695690
+    second: leftchair_4
+  - first:
+      213: -2837442798760322094
+    second: leftchair_5
+  - first:
+      213: -6976618814109839230
+    second: leftchair_6
+  - first:
+      213: -5814179331185978377
+    second: leftchair_7
+  - first:
+      213: 3130455515285894790
+    second: leftchair_8
+  - first:
+      213: -6057224588974156730
+    second: leftchair_9
+  - first:
+      213: -4442638253379262944
+    second: leftchair_10
+  - first:
+      213: 6375619645229812703
+    second: leftchair_11
+  - first:
+      213: 1838137505782272011
+    second: leftchair_12
+  - first:
+      213: -5394481749447793469
+    second: leftchair_13
+  - first:
+      213: 3213771813845380310
+    second: leftchair_14
+  - first:
+      213: -5830384162494190971
+    second: leftchair_15
+  - first:
+      213: -6214144860029142169
+    second: leftchair_16
+  - first:
+      213: -5550982539181366247
+    second: leftchair_17
+  - first:
+      213: 417763008752432330
+    second: leftchair_18
+  - first:
+      213: 979845049313976021
+    second: leftchair_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: leftchair_0
+      rect:
+        serializedVersion: 2
+        x: 6680
+        y: 494
+        width: 277
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 640ab87449eead5b0800000000000000
+      internalID: -5342695687298768826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leftchair_1
+      rect:
+        serializedVersion: 2
+        x: 9443
+        y: 820
+        width: 45
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fd9f2d749c10f020800000000000000
+      internalID: 2373428427705261559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leftchair_2
+      rect:
+        serializedVersion: 2
+        x: 9457
+        y: 826
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3579e8bbdd87f170800000000000000
+      internalID: 8212188420373050686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leftchair_3
+      rect:
+        serializedVersion: 2
+        x: 9464
+        y: 831
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 344ee105329dd5cd0800000000000000
+      internalID: -2567657466840030141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leftchair_4
+      rect:
+        serializedVersion: 2
+        x: 9487
+        y: 821
+        width: 83
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b842bf61230599e0800000000000000
+      internalID: -1615381449199695690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leftchair_5
+      rect:
+        serializedVersion: 2
+        x: 9568
+        y: 822
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2db9665dec06f98d0800000000000000
+      internalID: -2837442798760322094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leftchair_6
+      rect:
+        serializedVersion: 2
+        x: 9574
+        y: 821
+        width: 32
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2801dabf6221e2f90800000000000000
+      internalID: -6976618814109839230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leftchair_7
+      rect:
+        serializedVersion: 2
+        x: 9604
+        y: 821
+        width: 17
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f3dd3004b2ef4fa0800000000000000
+      internalID: -5814179331185978377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leftchair_8
+      rect:
+        serializedVersion: 2
+        x: 9620
+        y: 822
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68637cd84bc917b20800000000000000
+      internalID: 3130455515285894790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leftchair_9
+      rect:
+        serializedVersion: 2
+        x: 9634
+        y: 822
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6441f61345a60fba0800000000000000
+      internalID: -6057224588974156730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leftchair_10
+      rect:
+        serializedVersion: 2
+        x: 9646
+        y: 822
+        width: 44
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02664c1fb049852c0800000000000000
+      internalID: -4442638253379262944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leftchair_11
+      rect:
+        serializedVersion: 2
+        x: 9689
+        y: 821
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdbcce0b940ca7850800000000000000
+      internalID: 6375619645229812703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leftchair_12
+      rect:
+        serializedVersion: 2
+        x: 9702
+        y: 820
+        width: 25
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0099789250628910800000000000000
+      internalID: 1838137505782272011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leftchair_13
+      rect:
+        serializedVersion: 2
+        x: 9726
+        y: 815
+        width: 43
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c426d81e63f225b0800000000000000
+      internalID: -5394481749447793469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leftchair_14
+      rect:
+        serializedVersion: 2
+        x: 9768
+        y: 813
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6dcaa69ff6c999c20800000000000000
+      internalID: 3213771813845380310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leftchair_15
+      rect:
+        serializedVersion: 2
+        x: 9779
+        y: 809
+        width: 30
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58a6872be70561fa0800000000000000
+      internalID: -5830384162494190971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leftchair_16
+      rect:
+        serializedVersion: 2
+        x: 9807
+        y: 807
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76bb42b7c2ce2c9a0800000000000000
+      internalID: -6214144860029142169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leftchair_17
+      rect:
+        serializedVersion: 2
+        x: 9815
+        y: 803
+        width: 24
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 914e2bd7ac2f6f2b0800000000000000
+      internalID: -5550982539181366247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leftchair_18
+      rect:
+        serializedVersion: 2
+        x: 9838
+        y: 803
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac4bcf83e313cc500800000000000000
+      internalID: 417763008752432330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leftchair_19
+      rect:
+        serializedVersion: 2
+        x: 9845
+        y: 797
+        width: 22
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ded84381eb199d00800000000000000
+      internalID: 979845049313976021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      leftchair_0: -5342695687298768826
+      leftchair_1: 2373428427705261559
+      leftchair_10: -4442638253379262944
+      leftchair_11: 6375619645229812703
+      leftchair_12: 1838137505782272011
+      leftchair_13: -5394481749447793469
+      leftchair_14: 3213771813845380310
+      leftchair_15: -5830384162494190971
+      leftchair_16: -6214144860029142169
+      leftchair_17: -5550982539181366247
+      leftchair_18: 417763008752432330
+      leftchair_19: 979845049313976021
+      leftchair_2: 8212188420373050686
+      leftchair_3: -2567657466840030141
+      leftchair_4: -1615381449199695690
+      leftchair_5: -2837442798760322094
+      leftchair_6: -6976618814109839230
+      leftchair_7: -5814179331185978377
+      leftchair_8: 3130455515285894790
+      leftchair_9: -6057224588974156730
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

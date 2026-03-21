@@ -1700,7 +1700,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
           PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: -0.47
+      m_SerializableObject: -0.01
     m_Space: -1
   m_Property:
     name: dragCoefficient
@@ -2654,7 +2654,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"x":10.0,"y":10.0,"z":10.0}'
+      m_SerializableObject: '{"x":3.440000057220459,"y":3.740000009536743,"z":2.5799999237060549}'
     m_Space: -1
   m_Property:
     name: _Scale
