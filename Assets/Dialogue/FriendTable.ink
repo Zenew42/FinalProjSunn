@@ -1,9 +1,18 @@
 INCLUDE Globals.ink
 
-Now that everyone is here... let's sit down!
+{seated == true:
+        ->AtTable
+    -else:
+        ->LetsSit
+        }
 
+===LetsSit===
+Now that everyone is here... let's sit down!
+~seated = true
+    ->END
 //characters sit at the table
 
+===AtTable===
 Since it's my birthday we should play a game!!
 Which game do you wanna play friend?
 

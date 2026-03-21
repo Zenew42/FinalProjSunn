@@ -5,3 +5,4 @@ VAR stormy = false
 VAR has_hat = false
 VAR plushies = 0
 VAR has_all_plushies = false
+VAR seated = false

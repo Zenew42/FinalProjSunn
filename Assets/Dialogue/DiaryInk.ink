@@ -13,16 +13,6 @@ EXTERNAL DiaryScene()
 ===DiaryAct1===
 Hahaha, that's my diary!!
 You can't go through other people's diaries while they're watching, silly!
-Do you open it?
-
-*[Yes]
-    ->NervousFriend
-*[No]
-    ->END
-
-===NervousFriend===
-What are you doing?
-The cake is done!! Let's go sit down!! ^^
     ->END
 
 
