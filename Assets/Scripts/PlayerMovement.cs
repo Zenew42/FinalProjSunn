@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -7,6 +8,11 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rb;
     private Vector2 moveInput;
     private Animator animator;
+    
+    [SerializeField] private AudioSource footStep;
+    private float stepDelay = 0.1f;
+    
+    [SerializeField] private GameObject selfInteractable;
 
 
     
@@ -24,6 +30,11 @@ public class PlayerMovement : MonoBehaviour
             return;
         }
         rb.linearVelocity = new Vector2(moveInput.x * moveSpeed, moveInput.y * moveSpeed);
+
+        if (rb.linearVelocityX > 0 || rb.linearVelocityX < 0 || rb.linearVelocityY > 0 || rb.linearVelocityY < 0)
+        {
+            FootStepAudio(footStep);
+        }
     }
 
     public void Move(InputAction.CallbackContext context)
@@ -40,4 +51,29 @@ public class PlayerMovement : MonoBehaviour
             animator.SetFloat("LastInputY", moveInput.y);
         }*/
     }
+
+    private void FootStepAudio(AudioSource audio)
+    {
+        if (audio.isPlaying) return;
+
+        //if (stepDelay > Time.time) return;
+        //Debug.Log("Timer out");
+        
+        audio.Play();
+        //stepDelay = Time.time + stepDelay;
+    }
+    
+    public void SelfInteract()
+    {
+
+        if (!selfInteractable.activeSelf)
+        {
+            selfInteractable.SetActive(true);
+        }
+        else
+        {
+            selfInteractable.SetActive(false);
+        }
+    }
+
 }
