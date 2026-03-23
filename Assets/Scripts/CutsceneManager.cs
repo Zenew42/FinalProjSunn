@@ -16,6 +16,11 @@ public class CutsceneManager : MonoBehaviour
     {
         director.Pause();
     }
+
+    public void StopCutscene()
+    {
+        director.Stop();
+    }
     
 
     /*void DiaryScene()

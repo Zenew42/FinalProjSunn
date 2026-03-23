@@ -98,11 +98,12 @@ public class DialogueManager : MonoBehaviour
         
         _currentStory = new Story(inkJson.text);
 
-        #region External Functions
+        #region External Functions Setup
         _currentStory.BindExternalFunction("PartyHatPick", PartyHat);
         _currentStory.BindExternalFunction("TableScene", TableScene);
         _currentStory.BindExternalFunction("DiaryScene", DiaryScene);
         _currentStory.BindExternalFunction("GoOutside", GoOutside);
+        _currentStory.BindExternalFunction("StopPlaying", StopPlaying);
         #endregion
         
         
@@ -246,6 +247,7 @@ public class DialogueManager : MonoBehaviour
     }
     
 
+    #region External Functions
     void PartyHat()
     {
         Debug.Log("Party Hat picked up");
@@ -257,6 +259,7 @@ public class DialogueManager : MonoBehaviour
         ExitDialogue();
     }
 
+    //Sitting down at the table
     void TableScene()
     {
         ExitDialogue();
@@ -264,6 +267,7 @@ public class DialogueManager : MonoBehaviour
         Debug.Log(Cutscenes[0].name + " is called");
     }
     
+    //Opening the diary
     void DiaryScene()
     {
         ExitDialogue();
@@ -271,10 +275,26 @@ public class DialogueManager : MonoBehaviour
         Debug.Log(Cutscenes[1].name + " is called");
     }
 
+    void PrepareCake()
+    {
+        _cutsceneManager.StartCutscene(Cutscenes[2]);
+        Debug.Log(Cutscenes[2].name + " is called");
+    }
+
+    //When going out into the void
     void GoOutside()
     {
         ExitDialogue();
         SceneManager.LoadScene("TheVoid");
         Debug.Log("Going Outside");
     }
+
+    void StopPlaying()
+    {
+        ExitDialogue();
+        _cutsceneManager.StopCutscene();
+        Debug.Log("Stopped playing cutscene");
+    }
+    
+    #endregion
 }

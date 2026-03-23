@@ -1,4 +1,5 @@
 INCLUDE Globals.ink
+EXTERNAL StopPlaying()
 
 {seated == true:
         ->AtTable
@@ -135,6 +136,9 @@ Why would you want to leave now?? It's storming outside!
 //Thunder sound effect and light flickering followed by sound of rain and storm 
 Anyway! It's time for cake! I'll go prep it hehe! ^^
 ~free_time = true
+~StopPlaying()
+
+
 
 //free time
 

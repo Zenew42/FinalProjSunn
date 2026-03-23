@@ -11,6 +11,7 @@ EXTERNAL GoOutside()
 ===DoorAct1===
 The party has just started silly you!
 you cant leave yet hihihi
+    ->END
 
 //Act 2
 ===DoorAct2===
@@ -31,6 +32,7 @@ Step outside?
     ->END
 *[freedom?]
     ~GoOutside()
+    ->END
 
 ===outside===
 

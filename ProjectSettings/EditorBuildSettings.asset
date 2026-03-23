@@ -11,9 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Main Scene.unity
     guid: 33e3669e8548d0047bad040fc3f6e063
-  - enabled: 0
-    path: Assets/Temporary Assets/Test Scenes/ZDev.unity
-    guid: 5e242721acdbd584cabede7ba05cef34
+  - enabled: 1
+    path: Assets/Scenes/TheVoid.unity
+    guid: 77a1c15ea7755c145b582b036d33836f
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
