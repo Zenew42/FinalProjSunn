@@ -924,6 +924,7 @@ MonoBehaviour:
   Cutscenes:
   - {fileID: 11400000, guid: 5abbafdf495daa343856ee932957f35b, type: 2}
   - {fileID: 11400000, guid: 0da698252b33a344bba9a5e5a3098d39, type: 2}
+  loadGlobalsJSON: {fileID: 4900000, guid: b1bf3b85a336d27408fb253297c51d84, type: 3}
 --- !u!114 &256046384
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1106,6 +1107,10 @@ PlayableDirector:
     value: {fileID: 1553159376}
   - key: {fileID: -6375886097606164830, guid: 20c1aa75cb8269b488966836bee92138, type: 2}
     value: {fileID: 1991070935}
+  - key: {fileID: -2241347775519482722, guid: 5abbafdf495daa343856ee932957f35b, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -9079059018031701281, guid: 5abbafdf495daa343856ee932957f35b, type: 2}
+    value: {fileID: 552299814}
   m_ExposedReferences:
     m_References: []
 --- !u!114 &256046387
@@ -1482,15 +1487,15 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 552299809}
+    m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 3262998799915448929, guid: 22e6c7a6ea7385746b685a9b513d16b0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -1.97
       objectReference: {fileID: 0}
     - target: {fileID: 3262998799915448929, guid: 22e6c7a6ea7385746b685a9b513d16b0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 1.34
       objectReference: {fileID: 0}
     - target: {fileID: 3262998799915448929, guid: 22e6c7a6ea7385746b685a9b513d16b0, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1502,15 +1507,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3262998799915448929, guid: 22e6c7a6ea7385746b685a9b513d16b0, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3262998799915448929, guid: 22e6c7a6ea7385746b685a9b513d16b0, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3262998799915448929, guid: 22e6c7a6ea7385746b685a9b513d16b0, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3262998799915448929, guid: 22e6c7a6ea7385746b685a9b513d16b0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1524,29 +1529,27 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5223271812022078997, guid: 22e6c7a6ea7385746b685a9b513d16b0, type: 3}
+      propertyPath: inkJson
+      value: 
+      objectReference: {fileID: 4900000, guid: 2d8034fe797a43b409d981e99ca49991, type: 3}
     - target: {fileID: 7091952601871705427, guid: 22e6c7a6ea7385746b685a9b513d16b0, type: 3}
       propertyPath: m_Name
       value: dialogue object
       objectReference: {fileID: 0}
     - target: {fileID: 7091952601871705427, guid: 22e6c7a6ea7385746b685a9b513d16b0, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836901595062068812, guid: 22e6c7a6ea7385746b685a9b513d16b0, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 22e6c7a6ea7385746b685a9b513d16b0, type: 3}
---- !u!4 &370404089 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3262998799915448929, guid: 22e6c7a6ea7385746b685a9b513d16b0, type: 3}
-  m_PrefabInstance: {fileID: 370404088}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &370404090 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7091952601871705427, guid: 22e6c7a6ea7385746b685a9b513d16b0, type: 3}
-  m_PrefabInstance: {fileID: 370404088}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &394223899
 GameObject:
   m_ObjectHideFlags: 0
@@ -2184,6 +2187,7 @@ GameObject:
   - component: {fileID: 552299811}
   - component: {fileID: 552299812}
   - component: {fileID: 552299813}
+  - component: {fileID: 552299814}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -2334,8 +2338,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
   moveSpeed: 5
-  footStep: {fileID: 552299813}
-  selfInteractable: {fileID: 370404090}
+  footStep: {fileID: 0}
+  selfInteractable: {fileID: 0}
 --- !u!212 &552299808
 SpriteRenderer:
   serializedVersion: 2
@@ -2409,7 +2413,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 118857970}
-  - {fileID: 370404089}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &552299810
@@ -2604,6 +2607,36 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &552299814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 552299805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.Timeline::UnityEngine.Timeline.SignalReceiver
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: 3438c8c378de12f43b8c4306a742acae, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 552299807}
+          m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
+          m_MethodName: SelfInteract
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &557595745
 GameObject:
   m_ObjectHideFlags: 0
@@ -7655,3 +7688,4 @@ SceneRoots:
   - {fileID: 1482558716}
   - {fileID: 1283401583}
   - {fileID: 561429652}
+  - {fileID: 370404088}

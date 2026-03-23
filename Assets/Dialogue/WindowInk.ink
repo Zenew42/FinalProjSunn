@@ -1,13 +1,21 @@
 INCLUDE Globals.ink
 //Window
 
-//act 1 freetime 1
+{current_act:
+- 1: ->WindowAct1
+- 2: ->WindowAct2
+- else: error
+}
 
-"The weather outside is so nice!! Hehehe"
-"Perfectly Sunny for a perfect birthday"
+//act 1 freetime 1
+===WindowAct1===
+The weather outside is so nice!! Hehehe
+Perfectly Sunny for a perfect birthday
+    ->END
+
+
 
 //Act 2 freetime 2
-
+===WindowAct2===
 It's Storming
-
     -> END

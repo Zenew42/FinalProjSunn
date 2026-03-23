@@ -6,6 +6,7 @@ using UnityEngine;
 using Ink.Runtime;
 using UnityEngine.EventSystems;
 using UnityEngine.Playables;
+using UnityEngine.SceneManagement;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -47,6 +48,11 @@ public class DialogueManager : MonoBehaviour
     [Header("Cutscenes")]
     private CutsceneManager _cutsceneManager;
     [SerializeField] private PlayableAsset[] Cutscenes;
+    
+    [Header("Global Variables")]
+    private DialogueVariables _dialogueVariables;
+
+    [SerializeField] private TextAsset loadGlobalsJSON;
 
 
 
@@ -57,6 +63,8 @@ public class DialogueManager : MonoBehaviour
             Debug.LogError("More than one DialogueManager in the scene");
         }
         _instance = this;
+        
+        _dialogueVariables = new DialogueVariables(loadGlobalsJSON);
     }
 
     public static DialogueManager GetInstance()
@@ -94,12 +102,15 @@ public class DialogueManager : MonoBehaviour
         _currentStory.BindExternalFunction("PartyHatPick", PartyHat);
         _currentStory.BindExternalFunction("TableScene", TableScene);
         _currentStory.BindExternalFunction("DiaryScene", DiaryScene);
+        _currentStory.BindExternalFunction("GoOutside", GoOutside);
         #endregion
         
         
         dialogueIsPlaying = true;
         dialoguePanel.SetActive(true);
         PauseController.SetPause(true);
+        
+        _dialogueVariables.StartListening(_currentStory);
 
         ContinueDialogue();
     }
@@ -201,6 +212,8 @@ public class DialogueManager : MonoBehaviour
     
     public void ExitDialogue() 
     {
+        _dialogueVariables.StopListening(_currentStory);
+        
         dialoguePanel.SetActive(false);
         dialogueIsPlaying = false;
         dialogueText.text = "";
@@ -221,6 +234,18 @@ public class DialogueManager : MonoBehaviour
         ContinueDialogue();
     }
 
+    public Ink.Runtime.Object GetVariableState(string variableName)
+    {
+        Ink.Runtime.Object variableValue = null;
+        _dialogueVariables.variables.TryGetValue(variableName, out variableValue);
+        if (variableValue == null)
+        {
+            Debug.LogWarning("Ink Variable was found to be null: " + variableName);
+        }
+        return variableValue;
+    }
+    
+
     void PartyHat()
     {
         Debug.Log("Party Hat picked up");
@@ -236,13 +261,20 @@ public class DialogueManager : MonoBehaviour
     {
         ExitDialogue();
         _cutsceneManager.StartCutscene(Cutscenes[0]);
-        Debug.Log("Is called");
+        Debug.Log(Cutscenes[0].name + " is called");
     }
     
     void DiaryScene()
     {
         ExitDialogue();
         _cutsceneManager.StartCutscene(Cutscenes[1]);
-        Debug.Log("Is called");
+        Debug.Log(Cutscenes[1].name + " is called");
+    }
+
+    void GoOutside()
+    {
+        ExitDialogue();
+        SceneManager.LoadScene("TheVoid");
+        Debug.Log("Going Outside");
     }
 }

@@ -1,23 +1,40 @@
 INCLUDE Globals.ink
+EXTERNAL GoOutside()
 //door interaction 
-//Act 1
 
+{current_act:
+-1: ->DoorAct1
+-2: ->DoorAct2
+}
+
+//Act 1
+===DoorAct1===
 The party has just started silly you!
 you cant leave yet hihihi
 
 //Act 2
-It's still storming! you'll get all wet if you leave now!
+===DoorAct2===
+{free_time == true:
+        ->Leave
+    -else: 
+        It's still storming! you'll get all wet if you leave now!
+}
+
+
 
 //End of act 2
+===Leave===
 You stare at the door infront of you...
 Step outside?
 
 *[stay]
--> END
+    ->END
 *[freedom?]
-->outside
+    ~GoOutside()
 
 ===outside===
+
+//need an external function to load the new scene
 
 //glitchy stuff
 //cut to black

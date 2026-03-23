@@ -4,12 +4,13 @@ INCLUDE Globals.ink
         ->AtTable
     -else:
         ->LetsSit
-        }
+}
+
 
 ===LetsSit===
 Now that everyone is here... let's sit down!
 ~seated = true
-    ->END
+->END
 //characters sit at the table
 
 ===AtTable===
@@ -44,10 +45,12 @@ Would you rather eat strawberries or chocolate?
 
 ===Strawberries===
 Yummy!!! i love strawberries aswell hehe!
+~flavor = "Strawberry"
 ->Question2
 
 ===Chocolate===
 Chocolate is my favourite too hehe!!
+~flavor = "Chocolate"
 ->Question2
 
 ===Question2===
@@ -81,15 +84,20 @@ Let's see...
 If you could have a pet... Which would you have?
  //Could be brought up later in a creepy way, maybe a dead animal or smth lol
 * [Dog]
-->Cute
+    ~pet = "Dog"
+    ->Cute
 * [Cat]
-->Cute
+    ~pet = "Cat"
+    ->Cute
 * [Bunny]
-->Cute
+    ~pet = "Bunny"
+    ->Cute
 * [Snake]
-->Scary
+    ~pet = "Snake"
+    ->Scary
 * [A rock]
-->Funny
+    ~pet = "Rock"
+    ->Funny
 
 ===Cute===
 Awww.. that would be such a cute pet! ^^
@@ -123,6 +131,7 @@ Umm... Your turn to ask questions!! heheh
 
 ===CakePrep===
 Why would you want to leave now?? It's storming outside!
+~stormy = true
 //Thunder sound effect and light flickering followed by sound of rain and storm 
 Anyway! It's time for cake! I'll go prep it hehe! ^^
 ~free_time = true
