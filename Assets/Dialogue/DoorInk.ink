@@ -1,5 +1,5 @@
 INCLUDE Globals.ink
-EXTERNAL GoOutside()
+EXTERNAL GoOutsideScene()
 //door interaction 
 
 {current_act:
@@ -31,7 +31,7 @@ Step outside?
 *[stay]
     ->END
 *[freedom?]
-    ~GoOutside()
+    ~GoOutsideScene()
     ->END
 
 ===outside===
