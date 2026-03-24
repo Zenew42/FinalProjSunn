@@ -731,6 +731,7 @@ MonoBehaviour:
   - {fileID: 1162879237}
   partyHatObject: {fileID: 841249495}
   Cutscenes: []
+  loadGlobalsJSON: {fileID: 0}
 --- !u!1001 &256563537
 PrefabInstance:
   m_ObjectHideFlags: 0
