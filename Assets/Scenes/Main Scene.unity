@@ -3363,11 +3363,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8587960466601347081, guid: 0678e5bd93a488a4fb4ddbfeb70787e3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.21
+      value: 14.3
       objectReference: {fileID: 0}
     - target: {fileID: 8587960466601347081, guid: 0678e5bd93a488a4fb4ddbfeb70787e3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.86
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 8587960466601347081, guid: 0678e5bd93a488a4fb4ddbfeb70787e3, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5774,7 +5774,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 6
+  orthographic size: 8.396824
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -5799,7 +5799,7 @@ Transform:
   m_GameObject: {fileID: 1620823060}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.21, y: 1.86, z: -10}
+  m_LocalPosition: {x: -8.01, y: 1.32, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6744,11 +6744,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 138842800729911645, guid: b22032126ca387f45a4da6e3e2ccaff3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.21
+      value: -8.01
       objectReference: {fileID: 0}
     - target: {fileID: 138842800729911645, guid: b22032126ca387f45a4da6e3e2ccaff3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.86
+      value: 1.32
       objectReference: {fileID: 0}
     - target: {fileID: 138842800729911645, guid: b22032126ca387f45a4da6e3e2ccaff3, type: 3}
       propertyPath: m_LocalPosition.z
@@ -7487,7 +7487,7 @@ PlayableDirector:
   m_GameObject: {fileID: 2014947729}
   m_Enabled: 1
   serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: 5abbafdf495daa343856ee932957f35b, type: 2}
+  m_PlayableAsset: {fileID: 11400000, guid: 0da698252b33a344bba9a5e5a3098d39, type: 2}
   m_InitialState: 0
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
