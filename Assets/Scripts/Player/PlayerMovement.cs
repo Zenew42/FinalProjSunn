@@ -35,12 +35,14 @@ public class PlayerMovement : MonoBehaviour
         {
             FootStepAudio(footStep);
         }
+
+        FlipScale();
     }
 
     public void Move(InputAction.CallbackContext context)
     {
         moveInput = context.ReadValue<Vector2>();
-       /* animator.SetBool("isWalking", true);
+        animator.SetBool("isWalking", true);
         animator.SetFloat("InputX", moveInput.x);
         animator.SetFloat("InputY", moveInput.y);
         
@@ -49,20 +51,17 @@ public class PlayerMovement : MonoBehaviour
             animator.SetBool("isWalking", false);
             animator.SetFloat("LastInputX", moveInput.x);
             animator.SetFloat("LastInputY", moveInput.y);
-        }*/
+        }
     }
 
     private void FootStepAudio(AudioSource audio)
     {
         if (audio.isPlaying) return;
 
-        //if (stepDelay > Time.time) return;
-        //Debug.Log("Timer out");
-        
         audio.Play();
-        //stepDelay = Time.time + stepDelay;
+
     }
-    
+
     public void SelfInteract()
     {
 
@@ -73,6 +72,18 @@ public class PlayerMovement : MonoBehaviour
         else
         {
             selfInteractable.SetActive(false);
+        }
+    }
+
+    private void FlipScale()
+    {
+        if (rb.linearVelocityX < 0)
+        {
+            transform.localScale = new Vector2(1f, 1f);
+        }
+        else if (rb.linearVelocityX > 0)
+        {
+            transform.localScale = new Vector2(-1f, 1f);
         }
     }
 

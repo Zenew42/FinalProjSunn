@@ -102,7 +102,7 @@ public class DialogueManager : MonoBehaviour
         _currentStory.BindExternalFunction("PartyHatPick", PartyHat);
         _currentStory.BindExternalFunction("TableScene", TableScene);
         _currentStory.BindExternalFunction("DiaryScene", DiaryScene);
-        _currentStory.BindExternalFunction("GoOutside", GoOutside);
+        _currentStory.BindExternalFunction("GoOutsideScene", GoOutsideScene);
         _currentStory.BindExternalFunction("StopPlaying", StopPlaying);
         #endregion
         
@@ -282,11 +282,10 @@ public class DialogueManager : MonoBehaviour
     }
 
     //When going out into the void
-    void GoOutside()
+    void GoOutsideScene()
     {
-        ExitDialogue();
-        SceneManager.LoadScene("TheVoid");
-        Debug.Log("Going Outside");
+        _cutsceneManager.StartCutscene(Cutscenes[3]);
+        Debug.Log(Cutscenes[3].name + " is called");
     }
 
     void StopPlaying()
@@ -297,4 +296,10 @@ public class DialogueManager : MonoBehaviour
     }
     
     #endregion
+
+    public void LoadVoid()
+    {
+        SceneManager.LoadScene("TheVoid");
+        Debug.Log("Going Outside");
+    }
 }
