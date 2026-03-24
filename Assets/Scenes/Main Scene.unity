@@ -4279,7 +4279,7 @@ PrefabInstance:
     - target: {fileID: 5223271812022078997, guid: 22e6c7a6ea7385746b685a9b513d16b0, type: 3}
       propertyPath: inkJson
       value: 
-      objectReference: {fileID: 4900000, guid: a8c12565fbe336a4c8690ad21db88a49, type: 3}
+      objectReference: {fileID: 4900000, guid: a52f6f2f129bbba4ea1287d4ed35378b, type: 3}
     - target: {fileID: 7091952601871705427, guid: 22e6c7a6ea7385746b685a9b513d16b0, type: 3}
       propertyPath: m_Name
       value: Dialogue Window 2
