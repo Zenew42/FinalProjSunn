@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rb;
     private Vector2 moveInput;
     private Animator animator;
+    private SpriteRenderer _spriteRenderer;
     
     [SerializeField] private AudioSource footStep;
     private float stepDelay = 0.1f;
@@ -20,10 +21,12 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        _spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     void Update()
     {
+        AdjustSortingLayer();
         if (PauseController.isGamePaused)
         {
             rb.linearVelocity = Vector2.zero;
@@ -33,7 +36,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (rb.linearVelocityX > 0 || rb.linearVelocityX < 0 || rb.linearVelocityY > 0 || rb.linearVelocityY < 0)
         {
-            FootStepAudio(footStep);
+           // FootStepAudio(footStep);
         }
 
         FlipScale();
@@ -52,6 +55,11 @@ public class PlayerMovement : MonoBehaviour
             animator.SetFloat("LastInputX", moveInput.x);
             animator.SetFloat("LastInputY", moveInput.y);
         }
+    }
+
+    private void AdjustSortingLayer()
+    {
+        _spriteRenderer.sortingOrder = -(int)(transform.position.y * 100);
     }
 
     private void FootStepAudio(AudioSource audio)
