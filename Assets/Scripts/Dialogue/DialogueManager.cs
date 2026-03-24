@@ -10,6 +10,8 @@ using UnityEngine.SceneManagement;
 
 public class DialogueManager : MonoBehaviour
 {
+    private PlayerMovement _player;
+    
     [Header("DialogueUI")]   
     [SerializeField] private float charactersPerSecond = 20f;
     [SerializeField] private float punctuationDelay = 0.5f;
@@ -78,6 +80,7 @@ public class DialogueManager : MonoBehaviour
         dialogueIsPlaying = false;
 
         _cutsceneManager = GetComponent<CutsceneManager>();
+        _player = FindAnyObjectByType<PlayerMovement>();
         
         _choicesText= new TextMeshProUGUI[choices.Length];
         int index = 0;
@@ -103,6 +106,7 @@ public class DialogueManager : MonoBehaviour
         _currentStory.BindExternalFunction("TableScene", TableScene);
         _currentStory.BindExternalFunction("DiaryScene", DiaryScene);
         _currentStory.BindExternalFunction("GoOutsideScene", GoOutsideScene);
+        _currentStory.BindExternalFunction("PrepareCake", PrepareCake);
         _currentStory.BindExternalFunction("StopPlaying", StopPlaying);
         #endregion
         
@@ -271,12 +275,14 @@ public class DialogueManager : MonoBehaviour
     void DiaryScene()
     {
         ExitDialogue();
+        _player.animator = _player.hatAnimator;
         _cutsceneManager.StartCutscene(Cutscenes[1]);
         Debug.Log(Cutscenes[1].name + " is called");
     }
 
     void PrepareCake()
     {
+        _player.tableDialogue.SetActive(false);
         _cutsceneManager.StartCutscene(Cutscenes[2]);
         Debug.Log(Cutscenes[2].name + " is called");
     }

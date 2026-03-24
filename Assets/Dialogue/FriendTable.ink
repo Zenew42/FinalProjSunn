@@ -1,5 +1,6 @@
 INCLUDE Globals.ink
 EXTERNAL StopPlaying()
+EXTERNAL PrepareCake()
 
 {seated == true:
         ->AtTable
@@ -137,6 +138,7 @@ Why would you want to leave now?? It's storming outside!
 Anyway! It's time for cake! I'll go prep it hehe! ^^
 ~free_time = true
 ~StopPlaying()
+~PrepareCake()
 
 
 
