@@ -273,7 +273,7 @@ public class DialogueManager : MonoBehaviour
 
     void PlayMusic()
     {
-        audioSources[3].Play();
+        audioSources[2].Play();
     }
 
     //Sitting down at the table
