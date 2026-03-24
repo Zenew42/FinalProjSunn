@@ -7,13 +7,14 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float moveSpeed = 5f;
     private Rigidbody2D rb;
     private Vector2 moveInput;
-    private Animator animator;
+    public Animator animator;
     private SpriteRenderer _spriteRenderer;
     
     [SerializeField] private AudioSource footStep;
-    private float stepDelay = 0.1f;
     
-    [SerializeField] private GameObject selfInteractable;
+    public GameObject tableDialogue;
+    //public Animator noHatAnimator;
+    public Animator hatAnimator;
 
 
     
@@ -36,7 +37,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (rb.linearVelocityX > 0 || rb.linearVelocityX < 0 || rb.linearVelocityY > 0 || rb.linearVelocityY < 0)
         {
-           // FootStepAudio(footStep);
+           FootStepAudio(footStep);
         }
 
         FlipScale();
@@ -46,14 +47,14 @@ public class PlayerMovement : MonoBehaviour
     {
         moveInput = context.ReadValue<Vector2>();
         animator.SetBool("isWalking", true);
-        animator.SetFloat("InputX", moveInput.x);
-        animator.SetFloat("InputY", moveInput.y);
+        //animator.SetFloat("InputX", moveInput.x);
+        //animator.SetFloat("InputY", moveInput.y);
         
         if (context.canceled)
         {
             animator.SetBool("isWalking", false);
-            animator.SetFloat("LastInputX", moveInput.x);
-            animator.SetFloat("LastInputY", moveInput.y);
+            //animator.SetFloat("LastInputX", moveInput.x);
+            //animator.SetFloat("LastInputY", moveInput.y);
         }
     }
 
@@ -73,13 +74,13 @@ public class PlayerMovement : MonoBehaviour
     public void SelfInteract()
     {
 
-        if (!selfInteractable.activeSelf)
+        if (!tableDialogue.activeSelf)
         {
-            selfInteractable.SetActive(true);
+            tableDialogue.SetActive(true);
         }
         else
         {
-            selfInteractable.SetActive(false);
+            tableDialogue.SetActive(false);
         }
     }
 
