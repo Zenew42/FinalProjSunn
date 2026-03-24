@@ -18,16 +18,14 @@ EXTERNAL TableScene()
     ~FoxCollected = true
     {plushies == 6:
         ~TableScene()
-        - else:
-        ->END
-    }
-    -> END
+        
+else:->END}-> END
 
 ===RegDia===
 {current_act:
-- 1: ->WindowAct1
-- 2: ->WindowAct2
-- else: error
+1: ->WindowAct1
+2: ->WindowAct2
+else: error
 }
 
 //act 1 freetime 1
