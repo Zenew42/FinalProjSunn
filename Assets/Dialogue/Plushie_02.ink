@@ -7,7 +7,12 @@ EXTERNAL TableScene()
 
 //Plush Talking
 "Hewo my naime is Princess Pink Ribbons and mai fravorite color is gween!"
-    ~plushies += 1
-    ~TableScene()
+     ~plushies += 1
+    {plushies == 6:
+        ~TableScene()
+         - else:
+        ->END
+    }
+    -> END
     
     -> END

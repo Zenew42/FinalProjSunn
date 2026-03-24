@@ -3,9 +3,13 @@ EXTERNAL TableScene()
 //Window and plushie
 
 
-{FoxCollected == true: -> RegDia}
+{FoxCollected == true: 
+        -> RegDia
+    -else:
+        ->NotCollectedFox
+        }
 
-
+===NotCollectedFox===
 "Hehehe"
 "You found Mikkel!!"
 //fox talking

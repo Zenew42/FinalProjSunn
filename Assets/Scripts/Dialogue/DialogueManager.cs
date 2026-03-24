@@ -47,14 +47,17 @@ public class DialogueManager : MonoBehaviour
         '.', ',', '?', '!', ':', ';', '-'
     };
 
-    [Header("Cutscenes")]
+    [Header("CutscenesRelated")]
     private CutsceneManager _cutsceneManager;
     [SerializeField] private PlayableAsset[] Cutscenes;
+    [SerializeField] private GameObject stormyWindow;
     
     [Header("Global Variables")]
     private DialogueVariables _dialogueVariables;
-
     [SerializeField] private TextAsset loadGlobalsJSON;
+    
+    [Header("Audio")]
+    [SerializeField] private AudioSource[] audioSources;
 
 
 
@@ -103,10 +106,15 @@ public class DialogueManager : MonoBehaviour
 
         #region External Functions Setup
         _currentStory.BindExternalFunction("PartyHatPick", PartyHat);
+        
+        _currentStory.BindExternalFunction("PlayMusic", PlayMusic);
+        
         _currentStory.BindExternalFunction("TableScene", TableScene);
         _currentStory.BindExternalFunction("DiaryScene", DiaryScene);
         _currentStory.BindExternalFunction("GoOutsideScene", GoOutsideScene);
         _currentStory.BindExternalFunction("PrepareCake", PrepareCake);
+        
+        _currentStory.BindExternalFunction("PlayThunder", PlayThunder);
         _currentStory.BindExternalFunction("StopPlaying", StopPlaying);
         #endregion
         
@@ -263,6 +271,11 @@ public class DialogueManager : MonoBehaviour
         ExitDialogue();
     }
 
+    void PlayMusic()
+    {
+        audioSources[3].Play();
+    }
+
     //Sitting down at the table
     void TableScene()
     {
@@ -292,6 +305,14 @@ public class DialogueManager : MonoBehaviour
     {
         _cutsceneManager.StartCutscene(Cutscenes[3]);
         Debug.Log(Cutscenes[3].name + " is called");
+    }
+
+    void PlayThunder()
+    {
+        audioSources[0].Play();
+        audioSources[1].Play();
+        stormyWindow.SetActive(true);
+       
     }
 
     void StopPlaying()

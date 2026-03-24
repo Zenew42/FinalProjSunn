@@ -12,4 +12,5 @@ VAR seated = false
 VAR flavor = ""
 VAR pet = ""
 
+//Plushies
 VAR FoxCollected = false

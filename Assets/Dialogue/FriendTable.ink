@@ -1,6 +1,7 @@
 INCLUDE Globals.ink
 EXTERNAL StopPlaying()
 EXTERNAL PrepareCake()
+EXTERNAL PlayThunder()
 
 {seated == true:
         ->AtTable
@@ -134,6 +135,7 @@ Umm... Your turn to ask questions!! heheh
 ===CakePrep===
 Why would you want to leave now?? It's storming outside!
 ~stormy = true
+~PlayThunder()
 //Thunder sound effect and light flickering followed by sound of rain and storm 
 Anyway! It's time for cake! I'll go prep it hehe! ^^
 ~free_time = true

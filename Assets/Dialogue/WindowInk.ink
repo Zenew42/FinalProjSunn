@@ -9,8 +9,8 @@ INCLUDE Globals.ink
 
 //act 1 freetime 1
 ===WindowAct1===
-"The weather outside is so nice!! Hehehe
-Perfectly Sunny for a perfect birthday"
+The weather outside is so nice!! Hehehe
+Perfectly Sunny for a perfect birthday
     ->END
 
 
