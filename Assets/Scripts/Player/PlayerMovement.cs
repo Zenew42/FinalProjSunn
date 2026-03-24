@@ -87,11 +87,11 @@ public class PlayerMovement : MonoBehaviour
     {
         if (rb.linearVelocityX < 0)
         {
-            transform.localScale = new Vector2(1f, 1f);
+            transform.localScale = new Vector2(1.3f, 1.3f);
         }
         else if (rb.linearVelocityX > 0)
         {
-            transform.localScale = new Vector2(-1f, 1f);
+            transform.localScale = new Vector2(-1.3f, 1.3f);
         }
     }
 

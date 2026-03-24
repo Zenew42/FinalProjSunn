@@ -11,3 +11,5 @@ VAR has_all_plushies = false
 VAR seated = false
 VAR flavor = ""
 VAR pet = ""
+
+VAR FoxCollected = false
