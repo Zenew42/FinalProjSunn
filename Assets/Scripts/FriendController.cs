@@ -19,7 +19,7 @@ public class FriendController : MonoBehaviour
     
     public void FlipScale(float x)
     {
-        transform.localScale = new Vector2(x, 1f);
+        transform.localScale = new Vector2(x, 1.3f);
         //transform.localScale = new Vector2(transform.localScale.x, transform.localScale.y);
     }
 
@@ -28,6 +28,11 @@ public class FriendController : MonoBehaviour
         if (isPreparingCake)
         {
             _animator.Play("Friend_Back");
+        }
+
+        if (!isPreparingCake)
+        {
+            _animator.Play("Friend_Idle");
         }
     }
     
