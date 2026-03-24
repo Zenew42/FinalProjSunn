@@ -15,6 +15,8 @@ public class PlayerMovement : MonoBehaviour
     public GameObject tableDialogue;
     //public Animator noHatAnimator;
     public Animator hatAnimator;
+    
+    private bool facingLeft;
 
 
     
@@ -89,11 +91,19 @@ public class PlayerMovement : MonoBehaviour
         if (rb.linearVelocityX < 0)
         {
             transform.localScale = new Vector2(1.3f, 1.3f);
+            facingLeft = false;
         }
         else if (rb.linearVelocityX > 0)
         {
             transform.localScale = new Vector2(-1.3f, 1.3f);
+            facingLeft = true;
         }
+    }
+
+    public void isLeft()
+    {
+        if (facingLeft) return;
+        transform.localScale = new Vector2(-1.3f, 1.3f);
     }
 
 }

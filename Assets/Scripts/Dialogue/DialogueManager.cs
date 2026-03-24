@@ -324,6 +324,16 @@ public class DialogueManager : MonoBehaviour
     
     #endregion
 
+    public void StartHappyMusic()
+    {
+        audioSources[2].Play();
+    }
+
+    public void StopMusic()
+    {
+        audioSources[2].Stop();
+    }
+    
     public void LoadVoid()
     {
         SceneManager.LoadScene("TheVoid");

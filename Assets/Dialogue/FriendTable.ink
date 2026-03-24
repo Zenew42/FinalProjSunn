@@ -39,7 +39,7 @@ I'll start
 Would you rather eat strawberries or chocolate?
 
 // this later decides the cake flavour
-* [Strawberries]
+* [Strawberry]
 -> Strawberries
 
 * [Chocolate]
@@ -135,10 +135,10 @@ Umm... Your turn to ask questions!! heheh
 ===CakePrep===
 Why would you want to leave now?? It's storming outside!
 ~stormy = true
+~free_time = true
 ~PlayThunder()
 //Thunder sound effect and light flickering followed by sound of rain and storm 
 Anyway! It's time for cake! I'll go prep it hehe! ^^
-~free_time = true
 ~StopPlaying()
 ~PrepareCake()
 
