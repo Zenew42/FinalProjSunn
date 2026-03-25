@@ -1,7 +1,6 @@
 using UnityEngine;
 using Ink.Runtime;
 using System.Collections.Generic;
-using Ink.UnityIntegration;
 
 public class DialogueVariables
 {

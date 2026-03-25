@@ -50,12 +50,22 @@ public class PlayerMovement : MonoBehaviour
     {
         moveInput = context.ReadValue<Vector2>();
         animator.SetBool("isWalking", true);
+
+        if (hasHat)
+        {
+            animator.SetBool("hasHat", true);
+        }
         //animator.SetFloat("InputX", moveInput.x);
         //animator.SetFloat("InputY", moveInput.y);
         
         if (context.canceled)
         {
             animator.SetBool("isWalking", false);
+            
+            if (!hasHat)
+            {
+                animator.SetBool("hasHat", true);
+            }
             //animator.SetFloat("LastInputX", moveInput.x);
             //animator.SetFloat("LastInputY", moveInput.y);
         }
