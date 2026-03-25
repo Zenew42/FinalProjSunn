@@ -268,6 +268,7 @@ public class DialogueManager : MonoBehaviour
             obj.SetActive(true);
         
         partyHatObject.SetActive(false);
+        _player.hasHat = true;
         ExitDialogue();
     }
 

@@ -17,6 +17,7 @@ public class PlayerMovement : MonoBehaviour
     public Animator hatAnimator;
     
     private bool facingLeft;
+    public bool hasHat;
 
 
     

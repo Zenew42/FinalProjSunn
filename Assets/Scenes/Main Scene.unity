@@ -2565,7 +2565,7 @@ RectTransform:
   m_GameObject: {fileID: 618525905}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
+  m_LocalScale: {x: 0.67, y: 0.67, z: 0.67}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 43634250}
@@ -3363,11 +3363,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8587960466601347081, guid: 0678e5bd93a488a4fb4ddbfeb70787e3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 14.3
+      value: -7.86
       objectReference: {fileID: 0}
     - target: {fileID: 8587960466601347081, guid: 0678e5bd93a488a4fb4ddbfeb70787e3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2
+      value: 1.59
       objectReference: {fileID: 0}
     - target: {fileID: 8587960466601347081, guid: 0678e5bd93a488a4fb4ddbfeb70787e3, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3379,15 +3379,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8587960466601347081, guid: 0678e5bd93a488a4fb4ddbfeb70787e3, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.000017579976
+      value: -3.637979e-12
       objectReference: {fileID: 0}
     - target: {fileID: 8587960466601347081, guid: 0678e5bd93a488a4fb4ddbfeb70787e3, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.00008997957
+      value: -2.910383e-11
       objectReference: {fileID: 0}
     - target: {fileID: 8587960466601347081, guid: 0678e5bd93a488a4fb4ddbfeb70787e3, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0000000015818384
+      value: 7.5076426e-16
       objectReference: {fileID: 0}
     - target: {fileID: 8587960466601347081, guid: 0678e5bd93a488a4fb4ddbfeb70787e3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -5774,7 +5774,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 8.396824
+  orthographic size: 6
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -5799,7 +5799,7 @@ Transform:
   m_GameObject: {fileID: 1620823060}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.01, y: 1.32, z: -10}
+  m_LocalPosition: {x: -7.86, y: 1.59, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6744,11 +6744,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 138842800729911645, guid: b22032126ca387f45a4da6e3e2ccaff3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.01
+      value: -7.86
       objectReference: {fileID: 0}
     - target: {fileID: 138842800729911645, guid: b22032126ca387f45a4da6e3e2ccaff3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.32
+      value: 1.59
       objectReference: {fileID: 0}
     - target: {fileID: 138842800729911645, guid: b22032126ca387f45a4da6e3e2ccaff3, type: 3}
       propertyPath: m_LocalPosition.z
@@ -7487,8 +7487,8 @@ PlayableDirector:
   m_GameObject: {fileID: 2014947729}
   m_Enabled: 1
   serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: 0da698252b33a344bba9a5e5a3098d39, type: 2}
-  m_InitialState: 0
+  m_PlayableAsset: {fileID: 11400000, guid: 20c1aa75cb8269b488966836bee92138, type: 2}
+  m_InitialState: 1
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
@@ -7614,6 +7614,9 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 61510495c322265419c9b15ade081711, type: 2}
     - {fileID: 11400000, guid: a694872f4f8b36c418456414462f5b32, type: 2}
     - {fileID: 11400000, guid: 0794c4b1539eee14db8c43a35c11a937, type: 2}
+    - {fileID: 11400000, guid: 7b74e42244981624fa9fef7dbe996198, type: 2}
+    - {fileID: 11400000, guid: e0c8ffcfaba377945a4da4443ae18bfd, type: 2}
+    - {fileID: 11400000, guid: a76cca843c9e491498694bc569f56f10, type: 2}
     m_Events:
     - m_PersistentCalls:
         m_Calls:
@@ -7694,6 +7697,48 @@ MonoBehaviour:
           m_Arguments:
             m_ObjectArgument: {fileID: 4900000, guid: b07a356dcb1cdfd4baa16184c0a4e4a6, type: 3}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.TextAsset, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2014947730}
+          m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
+          m_MethodName: StartDialogue
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 4900000, guid: 3dc7a2ee8664dd74a975bef7e98c0da7, type: 3}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.TextAsset, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2014947730}
+          m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
+          m_MethodName: StopMusic
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2014947731}
+          m_TargetAssemblyTypeName: PauseController, Assembly-CSharp
+          m_MethodName: SetPause
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
