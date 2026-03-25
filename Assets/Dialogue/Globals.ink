@@ -15,3 +15,7 @@ VAR pet = ""
 //Plushies
 VAR FoxCollected = false
 VAR BunnyCollected = false
+VAR MonkeyCollected = false
+VAR HorseCollected = false
+VAR CatCollected = false
+VAR RavenCollected = false
