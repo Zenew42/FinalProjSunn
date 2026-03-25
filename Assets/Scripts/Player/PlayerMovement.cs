@@ -77,11 +77,11 @@ public class PlayerMovement : MonoBehaviour
         _spriteRenderer.sortingOrder = -(int)(transform.position.y * 100);
     }
 
-    private void FootStepAudio(AudioSource audio)
+    private void FootStepAudio(AudioSource footaudio)
     {
-        if (audio.isPlaying) return;
+        if (footaudio.isPlaying) return;
 
-        audio.Play();
+        footaudio.Play();
 
     }
 

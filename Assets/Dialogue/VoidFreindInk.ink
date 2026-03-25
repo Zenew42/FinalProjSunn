@@ -1,19 +1,20 @@
 INCLUDE Globals.ink
+EXTERNAL CrashGame()
 //Act 3
 
 Why did you leave
 I told you not to go outside
-I planned the perfect birthday party so YOU would have fun..
+I planned the perfect birthday party so <b>YOU</b> would have fun..
 WHY WOULD YOU DESTROY THAT?
-It's all gone because of YOU
+It's all gone because of <b>YOU</b>
 Because YOU couldn't trust me
 Why won't you trust me..?
 What did i do wrong?
 Everything i did was for you
-I even got you this present
 //dead animal of what you chose in act 1 
 Yet you chose to leave me
-You said you liked me... that wasn't a lie right?
+You said you liked me... 
+that wasn't a lie right?
 Do you like me?
 
 *[Yes]
@@ -41,7 +42,7 @@ You clearly never wanted to be here..
 ===Merge===
 I just wanted a friend.
 Why couldn't you be that for me?
-
+~CrashGame()
 //Game crashes
   
     -> END

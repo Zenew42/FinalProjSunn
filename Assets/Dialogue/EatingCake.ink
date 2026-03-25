@@ -1,5 +1,4 @@
 INCLUDE Globals.ink
-
 Mmmmmm!! This cake is so yummy!!
 
 You see something on the table, which you can only assume is supposed to be a cake.

@@ -27,6 +27,7 @@ public class DialogueManager : MonoBehaviour
     [Header("DialogueObjects")]
     [SerializeField] private GameObject[] dialogueObject;
     [SerializeField] private GameObject partyHatObject;
+    [SerializeField] private GameObject doorLeaveObject;
     
     private TextMeshProUGUI[] _choicesText;
     
@@ -116,6 +117,9 @@ public class DialogueManager : MonoBehaviour
         
         _currentStory.BindExternalFunction("PlayThunder", PlayThunder);
         _currentStory.BindExternalFunction("StopPlaying", StopPlaying);
+        
+        _currentStory.BindExternalFunction("DoorToLeave", SummonDoor);
+        _currentStory.BindExternalFunction("CrashGame", ExitGame);
         #endregion
         
         
@@ -274,6 +278,7 @@ public class DialogueManager : MonoBehaviour
 
     void PlayMusic()
     {
+        Debug.Log("Playing music");
         audioSources[2].Play();
     }
 
@@ -339,5 +344,20 @@ public class DialogueManager : MonoBehaviour
     {
         SceneManager.LoadScene("TheVoid");
         Debug.Log("Going Outside");
+    }
+
+    void SummonDoor()
+    {
+        Debug.Log("Door opened");
+        
+        foreach (GameObject obj in dialogueObject)
+            obj.SetActive(false);
+        
+        doorLeaveObject.SetActive(true);
+    }
+    
+    public void ExitGame()
+    {
+        Application.Quit();
     }
 }

@@ -10,6 +10,7 @@ EXTERNAL TableScene()
 //Plush Talking
 "Hewo my naime is Princess Pink Ribbons and mai fravorite color is gween!"
 //<<<<<<< Updated upstream
+~BunnyCollected = true
      ~plushies += 1
     {plushies == 6:
         ~TableScene()

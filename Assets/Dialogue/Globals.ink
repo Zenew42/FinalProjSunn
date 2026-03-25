@@ -1,6 +1,6 @@
 VAR free_time = false
 VAR stormy = false
-VAR current_act = 1
+VAR current_act = false
 
 //Act 1
 VAR has_hat = false

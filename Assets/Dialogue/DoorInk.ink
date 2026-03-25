@@ -2,9 +2,9 @@ INCLUDE Globals.ink
 EXTERNAL GoOutsideScene()
 //door interaction 
 
-{current_act:
--1: ->DoorAct1
--2: ->DoorAct2
+{free_time == true: 
+->DoorAct2
+-else: ->DoorAct1
 }
 
 //Act 1
@@ -15,12 +15,8 @@ you cant leave yet hihihi
 
 //Act 2
 ===DoorAct2===
-{free_time == true:
-        ->Leave
-    -else: 
-        It's still storming! you'll get all wet if you leave now!
-}
-
+It's still storming! you'll get all wet if you leave now!
+->END
 
 
 //End of act 2

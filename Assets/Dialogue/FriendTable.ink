@@ -133,10 +133,10 @@ Umm... Your turn to ask questions!! heheh
 
 
 ===CakePrep===
-Why would you want to leave now?? It's storming outside!
 ~stormy = true
-~free_time = true
 ~PlayThunder()
+Why would you want to leave now?? It's storming outside!
+~free_time = true
 //Thunder sound effect and light flickering followed by sound of rain and storm 
 Anyway! It's time for cake! I'll go prep it hehe! ^^
 ~StopPlaying()

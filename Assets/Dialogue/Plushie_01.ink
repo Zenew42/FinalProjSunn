@@ -24,10 +24,9 @@ EXTERNAL TableScene()
     -> END
 
 ===RegDia===
-{current_act:
-1: ->WindowAct1
-2: ->WindowAct2
--else: error
+{free_time == true: 
+->WindowAct2
+-else: ->WindowAct1
 }
 
 //act 1 freetime 1
@@ -35,8 +34,6 @@ EXTERNAL TableScene()
 "The weather outside is so nice!! Hehehe
 Perfectly Sunny for a perfect birthday"
     ->END
-
-
 
 //Act 2 freetime 2
 ===WindowAct2===

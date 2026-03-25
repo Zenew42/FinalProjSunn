@@ -1,5 +1,7 @@
 INCLUDE Globals.ink
 EXTERNAL DiaryScene()
+EXTERNAL DoorToLeave()
+
 //Diary
 
 {free_time == true:
@@ -22,6 +24,7 @@ You pick up your Friends' diary.
 Are you sure you want to open it?
 
 *[Yes]
+    ~DoorToLeave() 
     ~DiaryScene()
     ->DONE
 *[No]
