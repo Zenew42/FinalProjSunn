@@ -9,20 +9,17 @@ EXTERNAL TableScene()
 
 //Plush Talking
 "Hewo my naime is Princess Pink Ribbons and mai fravorite color is gween!"
-<<<<<<< Updated upstream
+//<<<<<<< Updated upstream
      ~plushies += 1
     {plushies == 6:
         ~TableScene()
-         
-else:->END}-> END
-=======
-    ~plushies += 1
-    ~BunnyCollected = true
-    {plushies == 6:
-      ~TableScene()
-      
-else:-> END }
->>>>>>> Stashed changes
+    -else:
+        ->END
+    }
+    ->END
+//=======
+    
+//>>>>>>> Stashed changes
 
     -> END
 
@@ -36,7 +33,8 @@ else:-> END }
     -> No
 
     ===Yes===
-    The fridge is empty. 
+    The fridge is empty.
+        ->DONE
 
     ===No===
     -> END
