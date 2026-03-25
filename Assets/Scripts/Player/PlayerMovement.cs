@@ -28,7 +28,7 @@ public class PlayerMovement : MonoBehaviour
         _spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
-    void Update()
+    public void Update()
     {
         AdjustSortingLayer();
         if (PauseController.isGamePaused)
@@ -44,6 +44,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
         FlipScale();
+        Debug.Log(hasHat);
     }
 
     public void Move(InputAction.CallbackContext context)
@@ -109,6 +110,7 @@ public class PlayerMovement : MonoBehaviour
             transform.localScale = new Vector2(-1.3f, 1.3f);
             facingLeft = true;
         }
+        Debug.Log(facingLeft);
     }
 
     public void isLeft()
