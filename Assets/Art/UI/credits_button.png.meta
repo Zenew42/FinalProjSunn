@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 3478ba0f046017147b8880917d8fdea9
+guid: 891e85554d501ba438b8876d9a224d42
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2329108946510720434
-    second: creditspage_0
+      213: -4399413014318744291
+    second: credits_button_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -72,10 +72,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 16384
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: creditspage_0
+      name: credits_button_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1920
-        height: 1080
+        x: 18
+        y: 11
+        width: 961
+        height: 546
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e425b08d0c75dafd0800000000000000
-      internalID: -2329108946510720434
+      spriteID: d1dfc4d2c2522f2c0800000000000000
+      internalID: -4399413014318744291
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      creditspage_0: -2329108946510720434
+      credits_button_0: -4399413014318744291
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

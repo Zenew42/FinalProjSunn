@@ -3374,45 +3374,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3650229572315595906, guid: 889c29d50d29e2845809cf0641b1ab3c, type: 3}
-      propertyPath: m_Type
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3650229572315595906, guid: 889c29d50d29e2845809cf0641b1ab3c, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 3632483009479206322, guid: 98bca3e9a0eae4748b053fc28338b1c5, type: 3}
     - target: {fileID: 4170161388163658328, guid: 889c29d50d29e2845809cf0641b1ab3c, type: 3}
       propertyPath: m_Name
       value: Pause
-      objectReference: {fileID: 0}
-    - target: {fileID: 4170161388163658328, guid: 889c29d50d29e2845809cf0641b1ab3c, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5935900951836402980, guid: 889c29d50d29e2845809cf0641b1ab3c, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7469674559662179027, guid: 889c29d50d29e2845809cf0641b1ab3c, type: 3}
-      propertyPath: m_Transition
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7469674559662179027, guid: 889c29d50d29e2845809cf0641b1ab3c, type: 3}
-      propertyPath: m_SpriteState.m_HighlightedSprite
-      value: 
-      objectReference: {fileID: 9020190476879086078, guid: 75fa17da25706bc46aa1fe9c83236a76, type: 3}
-    - target: {fileID: 8078176323079815666, guid: 889c29d50d29e2845809cf0641b1ab3c, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 142
-      objectReference: {fileID: 0}
-    - target: {fileID: 8078176323079815666, guid: 889c29d50d29e2845809cf0641b1ab3c, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 56
-      objectReference: {fileID: 0}
-    - target: {fileID: 8078176323079815666, guid: 889c29d50d29e2845809cf0641b1ab3c, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 778
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
