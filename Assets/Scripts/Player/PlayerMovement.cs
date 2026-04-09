@@ -65,7 +65,7 @@ public class PlayerMovement : MonoBehaviour
             
             if (!hasHat)
             {
-                animator.SetBool("hasHat", true);
+                animator.SetBool("hasHat", false);
             }
             //animator.SetFloat("LastInputX", moveInput.x);
             //animator.SetFloat("LastInputY", moveInput.y);

@@ -38,10 +38,10 @@ public class FriendController : MonoBehaviour
             _animator.Play("Friend_Back");
         }
 
-        if (!isPreparingCake)
+        /*if (!isPreparingCake)
         {
             _animator.Play("Friend_Idle");
-        }
+        }*/
     }
     
 }
