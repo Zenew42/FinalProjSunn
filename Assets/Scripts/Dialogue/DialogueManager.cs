@@ -294,7 +294,7 @@ public class DialogueManager : MonoBehaviour
     void DiaryScene()
     {
         ExitDialogue();
-        _player.animator = _player.hatAnimator;
+        //_player.animator = _player.hatAnimator;
         _cutsceneManager.StartCutscene(Cutscenes[1]);
         Debug.Log(Cutscenes[1].name + " is called");
     }

@@ -43,5 +43,10 @@ public class FriendController : MonoBehaviour
             _animator.Play("Friend_Idle");
         }*/
     }
+
+    public void PlayIdle()
+    {
+        _animator.Play("Friend_Idle");
+    }
     
 }

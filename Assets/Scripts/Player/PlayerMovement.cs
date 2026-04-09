@@ -13,10 +13,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private AudioSource footStep;
     
     public GameObject tableDialogue;
-    //public Animator noHatAnimator;
-    public Animator hatAnimator;
     
-    private bool facingLeft;
+    [SerializeField] private bool facingLeft;
     public bool hasHat;
 
 
@@ -103,12 +101,12 @@ public class PlayerMovement : MonoBehaviour
         if (rb.linearVelocityX < 0)
         {
             transform.localScale = new Vector2(1.3f, 1.3f);
-            facingLeft = false;
+            facingLeft = true;
         }
         else if (rb.linearVelocityX > 0)
         {
             transform.localScale = new Vector2(-1.3f, 1.3f);
-            facingLeft = true;
+            facingLeft = false;
         }
         Debug.Log(facingLeft);
     }
@@ -116,7 +114,14 @@ public class PlayerMovement : MonoBehaviour
     public void isLeft()
     {
         if (facingLeft) return;
-        transform.localScale = new Vector2(-1.3f, 1.3f);
+        
+        transform.localScale = new Vector2(1.3f, 1.3f);
+
+        /*if (!facingLeft)
+        {
+           
+        }*/
+        
     }
 
 }
