@@ -18,6 +18,7 @@ EXTERNAL TableScene()
     ~FoxCollected = true
     {plushies == 6:
         ~TableScene()
+        ->END
     -else:
         ->END
     }

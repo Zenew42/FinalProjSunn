@@ -9,6 +9,7 @@ EXTERNAL TableScene()
     ~plushies += 1
     {plushies == 6:
         ~TableScene()
+        ->END
          - else:
         ->END
     }

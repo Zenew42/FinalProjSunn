@@ -13,6 +13,7 @@ EXTERNAL TableScene()
     ~CatCollected = true
     {plushies == 6:
         ~TableScene()
+         ->END
          - else:
         ->END
     }

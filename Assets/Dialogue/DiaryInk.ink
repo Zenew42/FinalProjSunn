@@ -16,6 +16,7 @@ and i know my best friend would never snoop in my diary.
      ~plushies += 1
     {plushies == 6:
         ~TableScene()
+        ->END
     -else:
         ->END
     }

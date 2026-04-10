@@ -11,6 +11,7 @@ EXTERNAL TableScene()
     ~HorseCollected = true
     {plushies == 6:
         ~TableScene()
+        ->END
        - else:
         ->END
     }

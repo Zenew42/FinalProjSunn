@@ -6,7 +6,7 @@ public class InteractionDetector : MonoBehaviour
 {
     private IInteractable interactableInRange = null;
     public GameObject interactionIcon;
-    
+    public bool canAct = true;
     void Start()
     {
         interactionIcon.SetActive(false);
@@ -20,8 +20,11 @@ public class InteractionDetector : MonoBehaviour
         if (interactableInRange == null)
             return;
 
+        if (canAct == false)
+            return;
+        
         var target = interactableInRange;
-
+        
         target.Interact();
 
         if (!target.CanInteract())

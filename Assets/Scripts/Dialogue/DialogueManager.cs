@@ -285,7 +285,8 @@ public class DialogueManager : MonoBehaviour
     //Sitting down at the table
     void TableScene()
     {
-        ExitDialogue();
+        //ExitDialogue(); forcing it to exit doesn't let it save the plushies collected VAR which means you can retrigger this cutscene and get softlocked
+        //InteractionDetector.canAct = false;
         _cutsceneManager.StartCutscene(Cutscenes[0]);
         Debug.Log(Cutscenes[0].name + " is called");
     }
@@ -293,7 +294,6 @@ public class DialogueManager : MonoBehaviour
     //Opening the diary
     void DiaryScene()
     {
-        ExitDialogue();
         _player.animator = _player.hatAnimator;
         _cutsceneManager.StartCutscene(Cutscenes[1]);
         Debug.Log(Cutscenes[1].name + " is called");
@@ -328,8 +328,6 @@ public class DialogueManager : MonoBehaviour
         Debug.Log("Stopped playing cutscene");
     }
     
-    #endregion
-
     public void StartHappyMusic()
     {
         audioSources[2].Play();
@@ -348,7 +346,7 @@ public class DialogueManager : MonoBehaviour
 
     void SummonDoor()
     {
-        Debug.Log("Door opened");
+        Debug.Log("Door openable");
         
         foreach (GameObject obj in dialogueObject)
             obj.SetActive(false);
@@ -360,4 +358,5 @@ public class DialogueManager : MonoBehaviour
     {
         Application.Quit();
     }
+    #endregion
 }
