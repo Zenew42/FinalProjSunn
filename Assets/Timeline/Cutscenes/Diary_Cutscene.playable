@@ -22,6 +22,22 @@ MonoBehaviour:
   m_Loop: 0
   m_Version: 1
   m_Rotation: {x: 0, y: 0, z: 0, w: 1}
+--- !u!114 &-7930249423251444672
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15c38f6fa1940124db1ab7f6fe7268d1, type: 3}
+  m_Name: Signal Emitter
+  m_EditorClassIdentifier: Unity.Timeline::UnityEngine.Timeline.SignalEmitter
+  m_Time: 0
+  m_Retroactive: 0
+  m_EmitOnce: 0
+  m_Asset: {fileID: 11400000, guid: 94c2bf3fd21adb94d9c812ff7f31e41d, type: 2}
 --- !u!114 &-7778631051524389254
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -44,6 +60,22 @@ MonoBehaviour:
   m_Loop: 0
   m_Version: 1
   m_Rotation: {x: 0, y: 0, z: 0, w: 1}
+--- !u!114 &-6984349846537689465
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15c38f6fa1940124db1ab7f6fe7268d1, type: 3}
+  m_Name: Signal Emitter
+  m_EditorClassIdentifier: Unity.Timeline::UnityEngine.Timeline.SignalEmitter
+  m_Time: 68.01666666666665
+  m_Retroactive: 0
+  m_EmitOnce: 0
+  m_Asset: {fileID: 11400000, guid: 56e9ca7b494a48f4ebd38dd3f7079eb2, type: 2}
 --- !u!114 &-6892523109454194516
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -250,10 +282,10 @@ MonoBehaviour:
   m_Children: []
   m_Clips:
   - m_Version: 1
-    m_Start: 13.066666666666666
+    m_Start: 10.783333778381348
     m_ClipIn: 0
     m_Asset: {fileID: -1231225197547369208}
-    m_Duration: 6.483333333333334
+    m_Duration: 14.283332888285319
     m_TimeScale: 1
     m_ParentTrack: {fileID: -5072145264602892748}
     m_EaseInDuration: 0
@@ -315,11 +347,11 @@ MonoBehaviour:
     m_Recordable: 1
     m_PostExtrapolationMode: 0
     m_PreExtrapolationMode: 0
-    m_PostExtrapolationTime: 12.166666666666664
-    m_PreExtrapolationTime: 13.066666666666666
+    m_PostExtrapolationTime: 12.183333333333362
+    m_PreExtrapolationTime: 10.783333778381348
     m_DisplayName: ScaryFriend
   - m_Version: 1
-    m_Start: 31.716666666666665
+    m_Start: 37.25000000000003
     m_ClipIn: 0
     m_Asset: {fileID: 3982388351583537831}
     m_Duration: 1.5
@@ -384,11 +416,11 @@ MonoBehaviour:
     m_Recordable: 0
     m_PostExtrapolationMode: 2
     m_PreExtrapolationMode: 0
-    m_PostExtrapolationTime: 19.83333333333333
-    m_PreExtrapolationTime: 12.166666666666664
+    m_PostExtrapolationTime: 17.63333333333331
+    m_PreExtrapolationTime: 12.183333333333362
     m_DisplayName: Friend_Sit
   - m_Version: 1
-    m_Start: 53.05
+    m_Start: 56.38333333333334
     m_ClipIn: 0
     m_Asset: {fileID: 2413519481431215176}
     m_Duration: 1.5
@@ -488,7 +520,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15c38f6fa1940124db1ab7f6fe7268d1, type: 3}
   m_Name: Signal Emitter
   m_EditorClassIdentifier: Unity.Timeline::UnityEngine.Timeline.SignalEmitter
-  m_Time: 20.1
+  m_Time: 26.033333333333335
   m_Retroactive: 0
   m_EmitOnce: 0
   m_Asset: {fileID: 11400000, guid: 0794c4b1539eee14db8c43a35c11a937, type: 2}
@@ -504,26 +536,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15c38f6fa1940124db1ab7f6fe7268d1, type: 3}
   m_Name: Signal Emitter
   m_EditorClassIdentifier: Unity.Timeline::UnityEngine.Timeline.SignalEmitter
-  m_Time: 41.066666666666706
+  m_Time: 47.000000000000036
   m_Retroactive: 0
   m_EmitOnce: 0
   m_Asset: {fileID: 11400000, guid: 7b74e42244981624fa9fef7dbe996198, type: 2}
---- !u!114 &-3317864852627497305
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15c38f6fa1940124db1ab7f6fe7268d1, type: 3}
-  m_Name: Signal Emitter
-  m_EditorClassIdentifier: Unity.Timeline::UnityEngine.Timeline.SignalEmitter
-  m_Time: 54.55
-  m_Retroactive: 0
-  m_EmitOnce: 0
-  m_Asset: {fileID: 11400000, guid: a76cca843c9e491498694bc569f56f10, type: 2}
 --- !u!114 &-3021677779303123563
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -570,7 +586,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15c38f6fa1940124db1ab7f6fe7268d1, type: 3}
   m_Name: Signal Emitter
   m_EditorClassIdentifier: Unity.Timeline::UnityEngine.Timeline.SignalEmitter
-  m_Time: 53.05
+  m_Time: 58.98333333333333
   m_Retroactive: 0
   m_EmitOnce: 0
   m_Asset: {fileID: 11400000, guid: 61510495c322265419c9b15ade081711, type: 2}
@@ -668,43 +684,43 @@ AnimationClip:
         inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
         outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
       - serializedVersion: 3
-        time: 3.0166667
+        time: 1.65
         value: {x: 1.7700005, y: 2.52, z: 0}
-        inSlope: {x: 1.2822223, y: 0, z: 0}
-        outSlope: {x: 1.2822223, y: 0, z: 0}
+        inSlope: {x: 2.371233, y: 0, z: 0}
+        outSlope: {x: 2.371233, y: 0, z: 0}
         tangentMode: 0
         weightedMode: 0
         inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
         outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
       - serializedVersion: 3
-        time: 4.5
+        time: 2.4333334
         value: {x: 5.7700005, y: 2.52, z: 0}
-        inSlope: {x: 3.010056, y: 0, z: 0}
-        outSlope: {x: 3.010056, y: 0, z: 0}
+        inSlope: {x: 5.5546393, y: 0, z: 0}
+        outSlope: {x: 5.5546393, y: 0, z: 0}
         tangentMode: 0
         weightedMode: 0
         inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
         outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
       - serializedVersion: 3
-        time: 6
+        time: 3.2666667
         value: {x: 10.750001, y: 0.030000031, z: 0}
-        inSlope: {x: 2.8457143, y: 0, z: 0}
-        outSlope: {x: 2.8457143, y: 0, z: 0}
+        inSlope: {x: 5.151724, y: 0, z: 0}
+        outSlope: {x: 5.151724, y: 0, z: 0}
         tangentMode: 0
         weightedMode: 0
         inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
         outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
       - serializedVersion: 3
-        time: 8
+        time: 4.366667
         value: {x: 15.7300005, y: 0.78000003, z: 0}
-        inSlope: {x: 2.8906248, y: 0, z: 0}
-        outSlope: {x: 2.8906248, y: 0, z: 0}
+        inSlope: {x: 5.336538, y: 0, z: 0}
+        outSlope: {x: 5.336538, y: 0, z: 0}
         tangentMode: 0
         weightedMode: 0
         inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
         outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
       - serializedVersion: 3
-        time: 9.2
+        time: 5
         value: {x: 20, y: 0.78000003, z: 0}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
@@ -741,7 +757,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 9.2
+    m_StopTime: 5
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -771,43 +787,43 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 3.0166667
+        time: 1.65
         value: 1.7700005
-        inSlope: 1.2822223
-        outSlope: 1.2822223
+        inSlope: 2.371233
+        outSlope: 2.371233
         tangentMode: 136
         weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 4.5
+        time: 2.4333334
         value: 5.7700005
-        inSlope: 3.010056
-        outSlope: 3.010056
+        inSlope: 5.5546393
+        outSlope: 5.5546393
         tangentMode: 136
         weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 6
+        time: 3.2666667
         value: 10.750001
-        inSlope: 2.8457143
-        outSlope: 2.8457143
+        inSlope: 5.151724
+        outSlope: 5.151724
         tangentMode: 136
         weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 8
+        time: 4.366667
         value: 15.7300005
-        inSlope: 2.8906248
-        outSlope: 2.8906248
+        inSlope: 5.336538
+        outSlope: 5.336538
         tangentMode: 136
         weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 9.2
+        time: 5
         value: 20
         inSlope: 0
         outSlope: 0
@@ -837,7 +853,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 3.0166667
+        time: 1.65
         value: 2.52
         inSlope: 0
         outSlope: 0
@@ -846,7 +862,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 4.5
+        time: 2.4333334
         value: 2.52
         inSlope: 0
         outSlope: 0
@@ -855,7 +871,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 6
+        time: 3.2666667
         value: 0.030000031
         inSlope: 0
         outSlope: 0
@@ -864,7 +880,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 8
+        time: 4.366667
         value: 0.78000003
         inSlope: 0
         outSlope: 0
@@ -894,7 +910,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 3.0166667
+        time: 1.65
         value: 0
         inSlope: 0
         outSlope: 0
@@ -903,7 +919,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 4.5
+        time: 2.4333334
         value: 0
         inSlope: 0
         outSlope: 0
@@ -912,7 +928,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 6
+        time: 3.2666667
         value: 0
         inSlope: 0
         outSlope: 0
@@ -921,7 +937,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 8
+        time: 4.366667
         value: 0
         inSlope: 0
         outSlope: 0
@@ -1026,15 +1042,15 @@ MonoBehaviour:
   m_Children: []
   m_Clips:
   - m_Version: 1
-    m_Start: 31.716666666666665
+    m_Start: 37.25000000000003
     m_ClipIn: 0
     m_Asset: {fileID: -6892523109454194516}
-    m_Duration: 21.333333333333332
+    m_Duration: 19.13333333333331
     m_TimeScale: 1
     m_ParentTrack: {fileID: -786722632284634110}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
-    m_BlendInDuration: -1
+    m_BlendInDuration: 0.000000000000014210854715202004
     m_BlendOutDuration: -1
     m_MixInCurve:
       serializedVersion: 2
@@ -1062,25 +1078,7 @@ MonoBehaviour:
       m_RotationOrder: 4
     m_MixOutCurve:
       serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
+      m_Curve: []
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -1098,13 +1096,13 @@ MonoBehaviour:
     m_Start: 0
     m_ClipIn: 0
     m_Asset: {fileID: -6826292969468822205}
-    m_Duration: 31.716666666666665
+    m_Duration: 37.25000000000004
     m_TimeScale: 1
     m_ParentTrack: {fileID: -786722632284634110}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
     m_BlendInDuration: -1
-    m_BlendOutDuration: -1
+    m_BlendOutDuration: 0.000000000000014210854715202004
     m_MixInCurve:
       serializedVersion: 2
       m_Curve:
@@ -1164,10 +1162,10 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: followcam
   - m_Version: 1
-    m_Start: 53.05
+    m_Start: 56.38333333333334
     m_ClipIn: 0
     m_Asset: {fileID: -1797442049439307733}
-    m_Duration: 0.9500000000000028
+    m_Duration: 11.633333333333312
     m_TimeScale: 1
     m_ParentTrack: {fileID: -786722632284634110}
     m_EaseInDuration: 0
@@ -1304,11 +1302,11 @@ MonoBehaviour:
     m_Recordable: 1
     m_PostExtrapolationMode: 1
     m_PreExtrapolationMode: 0
-    m_PostExtrapolationTime: 18.683332888285317
+    m_PostExtrapolationTime: 24.21666622161868
     m_PreExtrapolationTime: 10.783333778381348
     m_DisplayName: Teleport
   - m_Version: 1
-    m_Start: 31.716666666666665
+    m_Start: 37.25000000000003
     m_ClipIn: 0
     m_Asset: {fileID: -9193132785831067036}
     m_Duration: 1
@@ -1373,14 +1371,14 @@ MonoBehaviour:
     m_Recordable: 1
     m_PostExtrapolationMode: 1
     m_PreExtrapolationMode: 0
-    m_PostExtrapolationTime: 20.33333333333333
+    m_PostExtrapolationTime: 18.13333333333331
     m_PreExtrapolationTime: 0
     m_DisplayName: TeleportFriend
   - m_Version: 1
-    m_Start: 53.05
+    m_Start: 56.38333333333334
     m_ClipIn: 0
     m_Asset: {fileID: -7778631051524389254}
-    m_Duration: 9.266666412353516
+    m_Duration: 5
     m_TimeScale: 1
     m_ParentTrack: {fileID: -732940270285205774}
     m_EaseInDuration: 0
@@ -1490,7 +1488,7 @@ MonoBehaviour:
     m_Start: 8
     m_ClipIn: 0
     m_Asset: {fileID: 8997570895037137338}
-    m_Duration: 13.783333333333331
+    m_Duration: 18.033333333333335
     m_TimeScale: 1
     m_ParentTrack: {fileID: -462679953598417788}
     m_EaseInDuration: 0
@@ -1556,7 +1554,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: Active
   - m_Version: 1
-    m_Start: 28.198935834628838
+    m_Start: 33.7322691679622
     m_ClipIn: 0
     m_Asset: {fileID: -2910439267781837142}
     m_Duration: 9.184397498704492
@@ -1674,13 +1672,13 @@ MonoBehaviour:
     m_Start: 8
     m_ClipIn: 0
     m_Asset: {fileID: -3021677779303123563}
-    m_Duration: 12.100000000000001
+    m_Duration: 18.033333333333335
     m_TimeScale: 1
     m_ParentTrack: {fileID: -332487750322187110}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
     m_BlendInDuration: -1
-    m_BlendOutDuration: 0.41666666666666785
+    m_BlendOutDuration: 0.9666666666666686
     m_MixInCurve:
       serializedVersion: 2
       m_Curve:
@@ -1722,15 +1720,15 @@ MonoBehaviour:
     m_PreExtrapolationTime: 8
     m_DisplayName: Recorded (3)
   - m_Version: 1
-    m_Start: 19.683333333333334
+    m_Start: 25.066666666666666
     m_ClipIn: 0
     m_Asset: {fileID: 1346765771134697126}
-    m_Duration: 3.0166666666666657
+    m_Duration: 5.866666666666667
     m_TimeScale: 1
     m_ParentTrack: {fileID: -332487750322187110}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
-    m_BlendInDuration: 0.41666666666666785
+    m_BlendInDuration: 0.9666666666666686
     m_BlendOutDuration: -1
     m_MixInCurve:
       serializedVersion: 2
@@ -1769,11 +1767,11 @@ MonoBehaviour:
     m_Recordable: 1
     m_PostExtrapolationMode: 0
     m_PreExtrapolationMode: 1
-    m_PostExtrapolationTime: 5.498935834628838
+    m_PostExtrapolationTime: 2.7989358346288675
     m_PreExtrapolationTime: 0
     m_DisplayName: Recorded (4)
   - m_Version: 1
-    m_Start: 28.198935834628838
+    m_Start: 33.7322691679622
     m_ClipIn: 0
     m_Asset: {fileID: -2419613881143027057}
     m_Duration: 9.184397498704492
@@ -1839,7 +1837,7 @@ MonoBehaviour:
     m_PostExtrapolationMode: 1
     m_PreExtrapolationMode: 0
     m_PostExtrapolationTime: Infinity
-    m_PreExtrapolationTime: 5.498935834628838
+    m_PreExtrapolationTime: 2.7989358346288675
     m_DisplayName: Recorded (6)
   m_Markers:
     m_Objects: []
@@ -1968,7 +1966,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15c38f6fa1940124db1ab7f6fe7268d1, type: 3}
   m_Name: Signal Emitter
   m_EditorClassIdentifier: Unity.Timeline::UnityEngine.Timeline.SignalEmitter
-  m_Time: 54.43333333333333
+  m_Time: 60
   m_Retroactive: 0
   m_EmitOnce: 0
   m_Asset: {fileID: 11400000, guid: a76cca843c9e491498694bc569f56f10, type: 2}
@@ -1995,8 +1993,9 @@ MonoBehaviour:
   m_Clips: []
   m_Markers:
     m_Objects:
-    - {fileID: 3163624115398440573}
     - {fileID: 2608135681694230943}
+    - {fileID: -6984349846537689465}
+    - {fileID: -7930249423251444672}
 --- !u!114 &2413519481431215176
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2031,7 +2030,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15c38f6fa1940124db1ab7f6fe7268d1, type: 3}
   m_Name: Signal Emitter
   m_EditorClassIdentifier: Unity.Timeline::UnityEngine.Timeline.SignalEmitter
-  m_Time: 53.03333333333333
+  m_Time: 56.38333333333334
   m_Retroactive: 0
   m_EmitOnce: 0
   m_Asset: {fileID: 11400000, guid: 4ebdc11b68cb4664f9c69102d549a459, type: 2}
@@ -2128,22 +2127,6 @@ MonoBehaviour:
   m_Markers:
     m_Objects: []
   m_PostPlaybackState: 3
---- !u!114 &3163624115398440573
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15c38f6fa1940124db1ab7f6fe7268d1, type: 3}
-  m_Name: Signal Emitter
-  m_EditorClassIdentifier: Unity.Timeline::UnityEngine.Timeline.SignalEmitter
-  m_Time: 0.03333333333333333
-  m_Retroactive: 0
-  m_EmitOnce: 0
-  m_Asset: {fileID: 11400000, guid: fef7ef5be03a6744292cd3839712d279, type: 2}
 --- !u!74 &3446161276171616528
 AnimationClip:
   m_ObjectHideFlags: 0
@@ -2489,7 +2472,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15c38f6fa1940124db1ab7f6fe7268d1, type: 3}
   m_Name: Signal Emitter
   m_EditorClassIdentifier: Unity.Timeline::UnityEngine.Timeline.SignalEmitter
-  m_Time: 43.800000000000026
+  m_Time: 49.733333333333356
   m_Retroactive: 0
   m_EmitOnce: 0
   m_Asset: {fileID: 11400000, guid: 7b74e42244981624fa9fef7dbe996198, type: 2}
@@ -2513,9 +2496,9 @@ AnimationClip:
   m_PPtrCurves:
   - serializedVersion: 2
     curve:
-    - time: 0
+    - time: 2.283333
       value: {fileID: 21300000, guid: 14d14f06b577d9942be3467c5d173832, type: 3}
-    - time: 6.916666
+    - time: 14.233334
       value: {fileID: -1979833744298974047, guid: ee7a527dee3254946989eafa0853a604, type: 3}
     attribute: m_Sprite
     path: 
@@ -2546,7 +2529,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 6.933333
+    m_StopTime: 14.25
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -2772,7 +2755,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15c38f6fa1940124db1ab7f6fe7268d1, type: 3}
   m_Name: Signal Emitter
   m_EditorClassIdentifier: Unity.Timeline::UnityEngine.Timeline.SignalEmitter
-  m_Time: 25
+  m_Time: 30.933333333333334
   m_Retroactive: 0
   m_EmitOnce: 0
   m_Asset: {fileID: 11400000, guid: 0794c4b1539eee14db8c43a35c11a937, type: 2}
@@ -2798,7 +2781,7 @@ MonoBehaviour:
   m_Children: []
   m_Clips:
   - m_Version: 1
-    m_Start: 31.233333333333327
+    m_Start: 36.766666666666694
     m_ClipIn: 0
     m_Asset: {fileID: -334339921428640304}
     m_Duration: 1
@@ -2863,11 +2846,11 @@ MonoBehaviour:
     m_Recordable: 1
     m_PostExtrapolationMode: 1
     m_PreExtrapolationMode: 0
-    m_PostExtrapolationTime: 20.81666666666667
-    m_PreExtrapolationTime: 31.233333333333327
+    m_PostExtrapolationTime: 18.616666666666646
+    m_PreExtrapolationTime: 36.766666666666694
     m_DisplayName: TeleportPlayer
   - m_Version: 1
-    m_Start: 53.05
+    m_Start: 56.38333333333334
     m_ClipIn: 0
     m_Asset: {fileID: -2772307729585385776}
     m_Duration: 1
@@ -2930,7 +2913,7 @@ MonoBehaviour:
     m_ExposedParameterNames: []
     m_AnimationCurves: {fileID: 0}
     m_Recordable: 1
-    m_PostExtrapolationMode: 1
+    m_PostExtrapolationMode: 0
     m_PreExtrapolationMode: 1
     m_PostExtrapolationTime: Infinity
     m_PreExtrapolationTime: 0
@@ -2967,7 +2950,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15c38f6fa1940124db1ab7f6fe7268d1, type: 3}
   m_Name: Signal Emitter
   m_EditorClassIdentifier: Unity.Timeline::UnityEngine.Timeline.SignalEmitter
-  m_Time: 36.98333333333336
+  m_Time: 42.91666666666669
   m_Retroactive: 0
   m_EmitOnce: 0
   m_Asset: {fileID: 11400000, guid: 7b74e42244981624fa9fef7dbe996198, type: 2}
@@ -3242,7 +3225,7 @@ MonoBehaviour:
   m_Children: []
   m_Clips:
   - m_Version: 1
-    m_Start: 31.71666666666667
+    m_Start: 37.25000000000004
     m_ClipIn: 0
     m_Asset: {fileID: 549557458145013487}
     m_Duration: 1.5
@@ -3308,7 +3291,7 @@ MonoBehaviour:
     m_PostExtrapolationMode: 2
     m_PreExtrapolationMode: 0
     m_PostExtrapolationTime: Infinity
-    m_PreExtrapolationTime: 31.71666666666667
+    m_PreExtrapolationTime: 37.25000000000004
     m_DisplayName: Player_Sit
   m_Markers:
     m_Objects: []
@@ -3342,7 +3325,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15c38f6fa1940124db1ab7f6fe7268d1, type: 3}
   m_Name: Signal Emitter
   m_EditorClassIdentifier: Unity.Timeline::UnityEngine.Timeline.SignalEmitter
-  m_Time: 33.35000000000004
+  m_Time: 39.28333333333337
   m_Retroactive: 0
   m_EmitOnce: 0
   m_Asset: {fileID: 11400000, guid: 7b74e42244981624fa9fef7dbe996198, type: 2}
@@ -3520,7 +3503,6 @@ MonoBehaviour:
     - {fileID: 7811789960760587675}
     - {fileID: -5097068053646441025}
     - {fileID: 1424376370091028982}
-    - {fileID: -3317864852627497305}
 --- !u!114 &7811789960760587675
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3533,7 +3515,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15c38f6fa1940124db1ab7f6fe7268d1, type: 3}
   m_Name: Signal Emitter
   m_EditorClassIdentifier: Unity.Timeline::UnityEngine.Timeline.SignalEmitter
-  m_Time: 47.983333333333334
+  m_Time: 53.916666666666664
   m_Retroactive: 0
   m_EmitOnce: 0
   m_Asset: {fileID: 11400000, guid: 7b74e42244981624fa9fef7dbe996198, type: 2}
@@ -3559,7 +3541,7 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
-        time: 0.41666666
+        time: 3.2666664
         value: 0
         inSlope: 0
         outSlope: 0
@@ -3598,7 +3580,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.41666666
+    m_StopTime: 3.2666664
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -3619,7 +3601,7 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
-        time: 0.41666666
+        time: 3.2666664
         value: 0
         inSlope: 0
         outSlope: 0
