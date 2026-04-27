@@ -28,6 +28,8 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private GameObject[] dialogueObject;
     [SerializeField] private GameObject partyHatObject;
     [SerializeField] private GameObject doorLeaveObject;
+    [SerializeField] private InteractionDetector interactionDetector;
+
     
     private TextMeshProUGUI[] _choicesText;
     
@@ -36,8 +38,9 @@ public class DialogueManager : MonoBehaviour
     private Coroutine _displayLineCoroutine;
     public static bool CanContinueToNextLine = true;
     
-    public bool choiceIsActive {get; private set;}
     
+    
+    public bool choiceIsActive {get; private set;}
     private Story _currentStory;
     private bool _isTyping;
     public static bool SkippingDialogue;
@@ -286,15 +289,17 @@ public class DialogueManager : MonoBehaviour
     void TableScene()
     {
         //ExitDialogue(); forcing it to exit doesn't let it save the plushies collected VAR which means you can retrigger this cutscene and get softlocked
-        //InteractionDetector.canAct = false;
+        interactionDetector.canAct = false;
+        Debug.Log("canAct =" + interactionDetector.canAct);
         _cutsceneManager.StartCutscene(Cutscenes[0]);
         Debug.Log(Cutscenes[0].name + " is called");
+        StartCoroutine(DelayedAction(12));
     }
     
     //Opening the diary
     void DiaryScene()
     {
-        _player.animator = _player.hatAnimator;
+        //_player.animator = _player.hatAnimator;
         _cutsceneManager.StartCutscene(Cutscenes[1]);
         Debug.Log(Cutscenes[1].name + " is called");
     }
@@ -309,8 +314,10 @@ public class DialogueManager : MonoBehaviour
     //When going out into the void
     void GoOutsideScene()
     {
+        interactionDetector.canAct = false;
         _cutsceneManager.StartCutscene(Cutscenes[3]);
         Debug.Log(Cutscenes[3].name + " is called");
+        StartCoroutine(DelayedAction(12));
     }
 
     void PlayThunder()
@@ -359,4 +366,10 @@ public class DialogueManager : MonoBehaviour
         Application.Quit();
     }
     #endregion
+    
+    IEnumerator DelayedAction(float time) {
+        Debug.Log("Starting delay...");
+        yield return new WaitForSeconds(time); 
+        interactionDetector.canAct = true;
+    }
 }

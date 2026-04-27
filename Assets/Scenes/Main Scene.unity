@@ -3898,6 +3898,17 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 1796657144129069444, guid: 383d4835c749ff943918524ad35bc8ba, type: 3}
   m_PrefabInstance: {fileID: 832700264}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &840488261 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5031465767560263516, guid: b22032126ca387f45a4da6e3e2ccaff3, type: 3}
+  m_PrefabInstance: {fileID: 1939618688}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a800c8600b8c6804e8e255051ab99a9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InteractionDetector
 --- !u!1 &847670326
 GameObject:
   m_ObjectHideFlags: 0
@@ -7854,6 +7865,7 @@ MonoBehaviour:
   - {fileID: 737282488}
   partyHatObject: {fileID: 1329426841}
   doorLeaveObject: {fileID: 2052457001}
+  interactionDetector: {fileID: 840488261}
   Cutscenes:
   - {fileID: 11400000, guid: 5abbafdf495daa343856ee932957f35b, type: 2}
   - {fileID: 11400000, guid: 0da698252b33a344bba9a5e5a3098d39, type: 2}
