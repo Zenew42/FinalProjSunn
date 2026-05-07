@@ -1,5 +1,7 @@
 INCLUDE Globals.ink
 EXTERNAL TableScene()
+EXTERNAL HandleObject(id)
+
 //Plushie 02 Princess Pink Ribbons
 
 {BunnyCollected == true: -> RegDia}
@@ -10,8 +12,9 @@ EXTERNAL TableScene()
 //Plush Talking
 "Hewo my naime is Princess Pink Ribbons and mai fravorite color is gween!"
 //<<<<<<< Updated upstream
-~BunnyCollected = true
+    ~BunnyCollected = true
      ~plushies += 1
+     ~ HandleObject("Bunny")
     {plushies == 6:
         ~TableScene()
         ->END

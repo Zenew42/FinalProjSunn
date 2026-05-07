@@ -1,13 +1,16 @@
 fileFormatVersion: 2
-guid: 552f782680cf448479869217775b0b2b
+guid: 67e90f3d5bd75e74992d9036bcd9116b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8841490917199087839
-    second: table_0
+      213: 7880080582887816625
+    second: orangebot_0
   - first:
-      213: 70885313432537070
-    second: table_1
+      213: 525592564947375478
+    second: orangebot_1
+  - first:
+      213: -8698980666841398653
+    second: orangebot_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -49,7 +52,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -75,7 +78,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 16384
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -99,62 +102,71 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: table_0
+      name: orangebot_0
       rect:
         serializedVersion: 2
-        x: 6622
-        y: 92
-        width: 946
-        height: 1034
+        x: 7
+        y: 9
+        width: 277
+        height: 284
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1277183ead6bc4580800000000000000
-      internalID: -8841490917199087839
+      spriteID: 1bd3b782a8bab5d60800000000000000
+      internalID: 7880080582887816625
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: table_1
+      name: orangebot_1
       rect:
         serializedVersion: 2
-        x: 7568
-        y: 92
-        width: 946
-        height: 1034
+        x: 9
+        y: 291
+        width: 11
+        height: 6
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ee740f621d5dbf000800000000000000
-      internalID: 70885313432537070
+      spriteID: 675564237a74b4700800000000000000
+      internalID: 525592564947375478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: orangebot_2
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 284
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3828de43c23074780800000000000000
+      internalID: -8698980666841398653
       vertices: []
       indices: 
       edges: []
@@ -163,7 +175,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 50fee5c61fb65fe4ebfada999b43e1ad
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -171,12 +183,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries:
-      - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":946.0,"y":1034.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+      entries: []
     nameFileIdTable:
-      table_0: -8841490917199087839
-      table_1: 70885313432537070
+      orangebot_0: 7880080582887816625
+      orangebot_1: 525592564947375478
+      orangebot_2: -8698980666841398653
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

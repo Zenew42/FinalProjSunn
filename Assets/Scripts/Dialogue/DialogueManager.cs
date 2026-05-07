@@ -28,6 +28,7 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private GameObject[] dialogueObject;
     [SerializeField] private GameObject partyHatObject;
     [SerializeField] private GameObject doorLeaveObject;
+    [SerializeField] private GameObject catTableObj;
     [SerializeField] private InteractionDetector interactionDetector;
 
     
@@ -63,8 +64,17 @@ public class DialogueManager : MonoBehaviour
     [Header("Audio")]
     [SerializeField] private AudioSource[] audioSources;
 
-
-
+    [SerializeField] private GameObject strawberryCake;
+    [SerializeField] private GameObject chocolateCake;
+    
+    [System.Serializable]
+    public class ObjectAction
+    {
+        public string id;   
+        public GameObject objectToHide;
+        public GameObject[] objectsToEnable;
+    }
+    
     private void Awake()
     {
         if (_instance != null)
@@ -113,10 +123,13 @@ public class DialogueManager : MonoBehaviour
         
         _currentStory.BindExternalFunction("PlayMusic", PlayMusic);
         
+        _currentStory.BindExternalFunction("HandleObject", (string id) => HandleObject(id));
         _currentStory.BindExternalFunction("TableScene", TableScene);
         _currentStory.BindExternalFunction("DiaryScene", DiaryScene);
         _currentStory.BindExternalFunction("GoOutsideScene", GoOutsideScene);
         _currentStory.BindExternalFunction("PrepareCake", PrepareCake);
+        
+        _currentStory.BindExternalFunction("SpawnCake", SpawnCake);
         
         _currentStory.BindExternalFunction("PlayThunder", PlayThunder);
         _currentStory.BindExternalFunction("StopPlaying", StopPlaying);
@@ -350,14 +363,61 @@ public class DialogueManager : MonoBehaviour
         SceneManager.LoadScene("TheVoid");
         Debug.Log("Going Outside");
     }
+    
+    [SerializeField] private List<ObjectAction> objectActions;
 
+    public void HandleObject(string id)
+    {
+        foreach (var action in objectActions)
+        {
+            if (action.id == id)
+            {
+                if (action.objectToHide != null)
+                {
+                    action.objectToHide.SetActive(false);
+                }
+
+                if (action.objectsToEnable != null)
+                {
+                    foreach (var obj in action.objectsToEnable)
+                        obj.SetActive(true);
+                }
+
+                Debug.Log($"Handled object action for: {id}");
+                return;
+            }
+        }
+
+        Debug.LogWarning($"No object action found for ID: {id}");
+    }
+
+    public void SpawnCake()
+    {
+        string choice = _currentStory.variablesState["flavor"] as string;
+
+        Debug.Log("Cake choice is: " + choice);
+
+        if (choice == "Strawberry")
+        {
+            strawberryCake.SetActive(true);
+        }
+        else if (choice == "Chocolate")
+        {
+            chocolateCake.SetActive(true);
+        }
+        else
+        {
+            Debug.LogWarning("Unknown cake choice: " + choice);
+        }
+    }
+    
     void SummonDoor()
     {
         Debug.Log("Door openable");
         
         foreach (GameObject obj in dialogueObject)
             obj.SetActive(false);
-        
+        catTableObj.SetActive(false);
         doorLeaveObject.SetActive(true);
     }
     

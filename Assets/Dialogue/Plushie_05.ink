@@ -1,5 +1,7 @@
 INCLUDE Globals.ink
 EXTERNAL TableScene()
+EXTERNAL HandleObject(id)
+
 //Plush 05 Filly The Pony
 {HorseCollected == true: -> RegDia}
 
@@ -9,6 +11,7 @@ EXTERNAL TableScene()
 "Neeeighhh"
     ~plushies += 1
     ~HorseCollected = true
+    ~ HandleObject("Horse")
     {plushies == 6:
         ~TableScene()
         ->END

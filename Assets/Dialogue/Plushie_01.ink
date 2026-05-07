@@ -1,5 +1,7 @@
 INCLUDE Globals.ink
 EXTERNAL TableScene()
+EXTERNAL HandleObject(id)
+
 //Window and plushie
 
 
@@ -16,6 +18,7 @@ EXTERNAL TableScene()
 "Hai I'm Mikkel The Fox, Noice to meit you Fraind"
     ~plushies += 1
     ~FoxCollected = true
+    ~ HandleObject("Fox")
     {plushies == 6:
         ~TableScene()
         ->END

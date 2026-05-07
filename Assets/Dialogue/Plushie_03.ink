@@ -1,5 +1,7 @@
 INCLUDE Globals.ink
 EXTERNAL TableScene()
+EXTERNAL HandleObject(id)
+
 //Plushie 03 Mr fluffykins
 
 {CatCollected == true: -> RegDia}
@@ -11,6 +13,7 @@ EXTERNAL TableScene()
 "Halloe Mye Namee Ise Mr FluffyKins.. Ande Ie Ame Pregnante"
     ~plushies += 1
     ~CatCollected = true
+    ~ HandleObject("Cat")
     {plushies == 6:
         ~TableScene()
          ->END
@@ -20,5 +23,6 @@ EXTERNAL TableScene()
     -> END
     
   ===RegDia===
-    "Nya, go get the otherss already"
+  There's a lot of cat hair on the floor here
+  Mr FluffyKins just loves laying in their favourite spot
     ->END

@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: 552f782680cf448479869217775b0b2b
+guid: 660e616cabe412849af4536002b38036
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8841490917199087839
-    second: table_0
+      213: -268729265047353795
+    second: greenbot_0
   - first:
-      213: 70885313432537070
-    second: table_1
+      213: 3872397272702839554
+    second: greenbot_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -49,7 +49,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -75,7 +75,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 16384
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -99,62 +99,49 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: table_0
+      name: greenbot_0
       rect:
         serializedVersion: 2
-        x: 6622
-        y: 92
-        width: 946
-        height: 1034
+        x: 16
+        y: 281
+        width: 11
+        height: 6
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1277183ead6bc4580800000000000000
-      internalID: -8841490917199087839
+      spriteID: d36c9104828454cf0800000000000000
+      internalID: -268729265047353795
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: table_1
+      name: greenbot_1
       rect:
         serializedVersion: 2
-        x: 7568
-        y: 92
-        width: 946
-        height: 1034
+        x: 17
+        y: 0
+        width: 274
+        height: 282
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ee740f621d5dbf000800000000000000
-      internalID: 70885313432537070
+      spriteID: 20be4ac7dc48db530800000000000000
+      internalID: 3872397272702839554
       vertices: []
       indices: 
       edges: []
@@ -163,7 +150,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 50fee5c61fb65fe4ebfada999b43e1ad
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -171,12 +158,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries:
-      - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":946.0,"y":1034.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+      entries: []
     nameFileIdTable:
-      table_0: -8841490917199087839
-      table_1: 70885313432537070
+      greenbot_0: -268729265047353795
+      greenbot_1: 3872397272702839554
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,13 +1,19 @@
 fileFormatVersion: 2
-guid: 552f782680cf448479869217775b0b2b
+guid: 5f9901e50c16c594ca6820dacecf54fd
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8841490917199087839
-    second: table_0
+      213: -2430502917971062997
+    second: purpbot_0
   - first:
-      213: 70885313432537070
-    second: table_1
+      213: -5681028945850402944
+    second: purpbot_1
+  - first:
+      213: -6306413614908460942
+    second: purpbot_2
+  - first:
+      213: 2055943288522431697
+    second: purpbot_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -49,7 +55,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -75,7 +81,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 16384
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -99,62 +105,93 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: table_0
+      name: purpbot_0
       rect:
         serializedVersion: 2
-        x: 6622
-        y: 92
-        width: 946
-        height: 1034
+        x: 27
+        y: 459
+        width: 13
+        height: 19
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1277183ead6bc4580800000000000000
-      internalID: -8841490917199087839
+      spriteID: b2fc8c4397e154ed0800000000000000
+      internalID: -2430502917971062997
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: table_1
+      name: purpbot_1
       rect:
         serializedVersion: 2
-        x: 7568
-        y: 92
-        width: 946
-        height: 1034
+        x: 9
+        y: 314
+        width: 11
+        height: 6
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ee740f621d5dbf000800000000000000
-      internalID: 70885313432537070
+      spriteID: 087ffdbe54ee821b0800000000000000
+      internalID: -5681028945850402944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: purpbot_2
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 32
+        width: 277
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 270b1b4ea3e1b78a0800000000000000
+      internalID: -6306413614908460942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: purpbot_3
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 307
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1dc5abe278d288c10800000000000000
+      internalID: 2055943288522431697
       vertices: []
       indices: 
       edges: []
@@ -163,7 +200,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 50fee5c61fb65fe4ebfada999b43e1ad
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -171,12 +208,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries:
-      - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":946.0,"y":1034.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+      entries: []
     nameFileIdTable:
-      table_0: -8841490917199087839
-      table_1: 70885313432537070
+      purpbot_0: -2430502917971062997
+      purpbot_1: -5681028945850402944
+      purpbot_2: -6306413614908460942
+      purpbot_3: 2055943288522431697
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,12 +1,15 @@
 INCLUDE Globals.ink
 EXTERNAL TableScene()
+EXTERNAL HandleObject(id)
+
 //Plushie 04 Sire Salvadore The 3rd
 {MonkeyCollected == true: -> RegDia}
 "Oh... You found monke... Well.."
 
 "Kneel before thyself, I am Sire Salvadore The 3rd And thine shall do as i say, peasant!"
-~MonkeyCollected = true
+    ~MonkeyCollected = true
     ~plushies += 1
+    ~ HandleObject("Monkey")
     {plushies == 6:
         ~TableScene()
         ->END

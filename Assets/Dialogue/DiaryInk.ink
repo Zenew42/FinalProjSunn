@@ -2,6 +2,8 @@ INCLUDE Globals.ink
 EXTERNAL DiaryScene()
 EXTERNAL DoorToLeave()
 EXTERNAL TableScene()
+EXTERNAL SpawnCake() 
+EXTERNAL HandleObject(id)
 
 //Diary
 {RavenCollected == true: -> RegDia}
@@ -12,8 +14,9 @@ but now it's party time!
 I think they deserve a break
 and i know my best friend would never snoop in my diary.
 
-~RavenCollected = true
-     ~plushies += 1
+    ~RavenCollected = true
+    ~plushies += 1
+    ~HandleObject("Raven")
     {plushies == 6:
         ~TableScene()
         ->END
@@ -44,6 +47,7 @@ Are you sure you want to open it?
 
 *[Yes]
     ~DoorToLeave() 
+    ~SpawnCake()
     ~DiaryScene()
     ->DONE
 *[No]
